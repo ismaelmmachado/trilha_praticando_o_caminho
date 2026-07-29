@@ -11,11 +11,11 @@ Minisite da jornada de discipulado **Praticando o Caminho** da **Comunidade Vitr
 
 Cada passo contém 5 seções fixas:
 
-1. **Medite** — base bíblica + devocional
-2. **Assista** — vídeo/mensagem do encontro
-3. **Aprofunde** — livros, músicas e materiais complementares
-4. **Pratique** — desafio prático da semana
-5. **Organize-se** — plano diário de leitura e reflexão
+1. **Medite** — base bíblica + devocional (conteúdo das apostilas)
+2. **Assista** — vídeo/mensagem do encontro (placeholders — sem vídeos ainda)
+3. **Aprofunde** — referência ao livro *Praticando o Caminho* de John Mark Comer, com capítulo por passo
+4. **Pratique** — oração semanal
+5. **Organize-se** — desafio da semana (único, sem plano diário)
 
 ## Site
 
@@ -29,18 +29,18 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
 
 ```
 /
-├── index.html              # Home
+├── index.html              # Home (etapas + grid de passos + transição)
 ├── passo.html              # Template único de passo (?id=1..17)
-├── facilitador.html        # Guia do facilitador
+├── facilitador.html        # Guia do facilitador (10 seções + checklist)
 ├── complementar.html       # Material complementar
 ├── dados/
-│   └── passos.json         # Conteúdo dos 17 passos
+│   └── passos.json         # Conteúdo real dos 17 passos (68164 chars devocionais)
 ├── css/
 │   ├── tokens.css          # Design tokens (variáveis CSS)
 │   └── estilo.css          # Componentes e layout
 ├── js/
-│   ├── app.js              # Renderização da home
-│   └── passos.js           # Renderização do passo individual
+│   ├── app.js              # Renderização da home + transição Etapa 1→2
+│   └── passos.js           # Renderização do passo individual (5 seções)
 └── design-system/
     └── praticando-o-caminho-vitral/
         ├── MASTER.md       # Design system global
@@ -48,6 +48,13 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
             ├── etapa-1.md  # Override etapa amarela
             └── etapa-2.md  # Override etapa verde
 ```
+
+## Conteúdo
+
+Todo o conteúdo do site foi extraído das 17 apostilas originais (formato docx) via `scripts/extrair_apostilas.py`. **Nada foi inventado** — seções sem conteúdo das apostilas permanecem como placeholders (vídeos, links do livro).
+
+- 2 seções de transição entre Etapa 1 e Etapa 2 (conteúdo do Guia de Transição)
+- Guia do Facilitador com 10 seções + checklist (conteúdo da Apostila do Facilitador)
 
 ## Design System
 
@@ -67,23 +74,23 @@ Gerado com [UI-UX Pro Max](../.opencode/skills/ui-ux-pro-max).
 
 | # | Título | Etapa | Status |
 |---|--------|-------|--------|
-| 1 | O Grande Amor | 1 | ✅ Aberto |
-| 2 | O Chamado | 1 | ✅ Aberto |
-| 3 | A Graça | 1 | ✅ Aberto |
-| 4 | A Fé | 1 | ✅ Aberto |
-| 5 | O Novo Nascimento | 1 | ✅ Aberto |
-| 6 | O Fruto do Espírito | 1 | ✅ Aberto |
-| 7 | A Oração | 1 | ✅ Aberto |
-| 8 | A Palavra | 1 | ✅ Aberto |
-| 9 | Comunhão | 2 | ✅ Aberto |
-| 10 | Serviço | 2 | ✅ Aberto |
-| 11 | Mordomia | 2 | ⏳ Breve |
-| 12 | Discipulado | 2 | ⏳ Breve |
-| 13 | Evangelismo | 2 | ⏳ Breve |
-| 14 | Generosidade | 2 | ⏳ Breve |
-| 15 | Perseverança | 2 | ⏳ Breve |
-| 16 | Testemunho | 2 | ⏳ Breve |
-| 17 | Missão | 2 | ⏳ Breve |
+| 1 | O Convite Para Ser Aprendiz | 1 | ✅ Aberto |
+| 2 | A Formação Que Começa Em Deus | 1 | ✅ Aberto |
+| 3 | O Caminho da Transformação | 1 | ✅ Aberto |
+| 4 | As Práticas que nos Formam | 1 | ✅ Aberto |
+| 5 | Dor e Sofrimento | 1 | ✅ Aberto |
+| 6 | Cura do Pecado | 1 | ✅ Aberto |
+| 7 | Minha Regra de Vida | 1 | ✅ Aberto |
+| 8 | Vida em Comunidade | 1 | ✅ Aberto |
+| 9 | O Descanso como Ritmo de Graça | 2 | ✅ Aberto |
+| 10 | O Ritmo da Oração | 2 | ✅ Aberto |
+| 11 | O Jejum como Espaço para Deus | 2 | ✅ Aberto |
+| 12 | O Silêncio como Espaço Sagrado | 2 | ✅ Aberto |
+| 13 | A Generosidade como Estilo de Vida | 2 | ✅ Aberto |
+| 14 | A Meditação como Leitura Orante | 2 | ✅ Aberto |
+| 15 | A Comunidade como Corpo de Cristo | 2 | ✅ Aberto |
+| 16 | O Serviço como Expressão do Reino | 2 | ✅ Aberto |
+| 17 | O Testemunho como Coerência de Vida | 2 | ✅ Aberto |
 
 ## Frase-guia
 
