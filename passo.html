@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0; url=passo-1.html" />
+  <title>Redirecionando... · Praticando o Caminho</title>
+</head>
+<body>
+  <script>
+    const id = new URLSearchParams(window.location.search).get('id');
+    if (id) window.location.replace('passo-' + id + '.html');
+    else window.location.replace('passo-1.html');
+  </script>
+</body>
+</html>

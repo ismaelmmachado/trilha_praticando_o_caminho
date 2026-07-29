@@ -1,5 +1,11 @@
 # Regras de Salvamento (Git)
 
+## REGRA DE OURO — Identidade Vitral
+
+Antes de criar ou revisar qualquer conteúdo para este projeto, consulte `docs/REGRA_DE_OURO.md` e valide o texto contra todos os critérios.
+
+Resumo: **Simples, Missional e Acolhedor; Reformado, Protestante e Presbiteriano; com citações bíblicas na NVT; claro, fluido, alinhado e focado no discipulado — com linguagem acessível, sem jargões, e sempre coerente com o Playbook.**
+
 ## Comportamento ao salvar
 
 ### 1. Comando "salvar" (genérico)
