@@ -13,18 +13,15 @@ const TRANSICAO_HTML = `
   </div>
 
   <div class="transicao-body">
-    <p>Você concluiu a Etapa 1 da Trilha Praticando o Caminho. Foram oito passos — e você os percorreu. Agora você está prestes a iniciar a Etapa 2: o aprofundamento em cada uma das 9 práticas que nos formam.</p>
+    <p>Você concluiu a Etapa 1 da Trilha. Foram oito passos — e você os percorreu. Agora é hora de mergulhar.</p>
 
-    <p>Você começou entendendo o que significa ser aprendiz de Jesus. Depois descobriu que está sendo formado o tempo todo — e que a transformação não acontece por esforço isolado, mas pela prática. Conheceu as 9 práticas espirituais, enfrentou a dor com honestidade, trouxe o pecado à luz, criou sua Regra de Vida e entendeu a importância de caminhar com outros.</p>
-
-    <p>Agora é hora de mergulhar. Você vai explorar o descanso como ritmo de graça, a oração como conversa com Deus, o jejum como espaço para Ele, o silêncio como lugar sagrado, a generosidade como estilo de vida, a meditação como leitura orante, a comunidade como corpo de Cristo, o serviço como expressão do Reino e o testemunho como coerência de vida.</p>
+    <p>A Etapa 2 não é um novo começo. É onde cada prática que você conheceu ganha profundidade. O que antes foi apresentado agora será vivido com mais intenção.</p>
 
     <div class="transicao-conexao">
-      <p>A Etapa 1 e a Etapa 2 não são duas jornadas diferentes. São duas partes de uma mesma jornada.</p>
       <blockquote>A Etapa 1 te deu o mapa. A Etapa 2 te ajuda a caminhar.</blockquote>
     </div>
 
-    <p class="transicao-reflexao">A transformação não acontece por conhecimento — acontece por prática. Você está pronto para dar o próximo passo?</p>
+    <p class="transicao-reflexao">O próximo passo te espera.</p>
   </div>
 </div>`;
 
