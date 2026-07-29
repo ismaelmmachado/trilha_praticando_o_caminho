@@ -17,6 +17,12 @@ Cada passo contém 5 seções fixas:
 4. **Pratique** — desafio prático da semana
 5. **Organize-se** — plano diário de leitura e reflexão
 
+## Site
+
+🌐 **https://ismaelmmachado.github.io/trilha_praticando_o_caminho/**
+
+Hospedado via GitHub Pages (branch `main`, raiz).
+
 ## Stack
 
 HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
