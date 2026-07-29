@@ -13,61 +13,18 @@ const TRANSICAO_HTML = `
   </div>
 
   <div class="transicao-body">
-    <p>Você concluiu a Etapa 1 da Trilha Praticando o Caminho. Foram oito passos. Agora você está prestes a iniciar a Etapa 2 — o aprofundamento em cada uma das 9 práticas que nos formam.</p>
+    <p>Você concluiu a Etapa 1 da Trilha Praticando o Caminho. Foram oito passos — e você os percorreu. Agora você está prestes a iniciar a Etapa 2: o aprofundamento em cada uma das 9 práticas que nos formam.</p>
 
-    <div class="transicao-tabelas">
-      <div class="transicao-col">
-        <h3>O que você aprendeu (Etapa 1)</h3>
-        <ul>
-          <li><strong>1.</strong> O Convite para ser Aprendiz — Você entendeu o que significa ser aprendiz de Jesus</li>
-          <li><strong>2.</strong> A Formação que Começa em Deus — Você descobriu que está sendo formado o tempo todo</li>
-          <li><strong>3.</strong> O Caminho da Transformação — Você aprendeu que a transformação acontece pela prática</li>
-          <li><strong>4.</strong> As Práticas que nos Formam — Você conheceu as 9 práticas espirituais</li>
-          <li><strong>5.</strong> Dor e Sofrimento — Você aprendeu a trazer a dor à luz</li>
-          <li><strong>6.</strong> Cura do Pecado — Você entendeu a importância da confissão e da cura</li>
-          <li><strong>7.</strong> Minha Regra de Vida — Você criou um ritmo pessoal para a caminhada</li>
-          <li><strong>8.</strong> Vida em Comunidade — Você entendeu a importância de caminhar com outros</li>
-        </ul>
-      </div>
+    <p>Você começou entendendo o que significa ser aprendiz de Jesus. Depois descobriu que está sendo formado o tempo todo — e que a transformação não acontece por esforço isolado, mas pela prática. Conheceu as 9 práticas espirituais, enfrentou a dor com honestidade, trouxe o pecado à luz, criou sua Regra de Vida e entendeu a importância de caminhar com outros.</p>
 
-      <div class="transicao-col">
-        <h3>O que vem a seguir (Etapa 2)</h3>
-        <ul>
-          <li><strong>9.</strong> O Descanso como Ritmo de Graça — Você vai aprofundar a prática do descanso semanal</li>
-          <li><strong>10.</strong> O Ritmo da Oração — Você vai cultivar um ritmo de oração que sustenta a vida</li>
-          <li><strong>11.</strong> O Jejum como Espaço para Deus — Você vai descobrir o jejum como prática de dependência</li>
-          <li><strong>12.</strong> O Silêncio como Espaço Sagrado — Você vai aprender a criar espaço para ouvir Deus</li>
-          <li><strong>13.</strong> A Generosidade como Estilo de Vida — Você vai confrontar a lógica do consumo</li>
-          <li><strong>14.</strong> A Meditação como Leitura Orante — Você vai aprender a ler a Bíblia de forma lenta e orante</li>
-          <li><strong>15.</strong> A Comunidade como Corpo de Cristo — Você vai aprofundar seu lugar no corpo de Cristo</li>
-          <li><strong>16.</strong> O Serviço como Expressão do Reino — Você vai descobrir o serviço como identidade</li>
-          <li><strong>17.</strong> O Testemunho como Coerência de Vida — Você vai aprender a viver de forma que sua vida aponte para Jesus</li>
-        </ul>
-      </div>
-    </div>
+    <p>Agora é hora de mergulhar. Você vai explorar o descanso como ritmo de graça, a oração como conversa com Deus, o jejum como espaço para Ele, o silêncio como lugar sagrado, a generosidade como estilo de vida, a meditação como leitura orante, a comunidade como corpo de Cristo, o serviço como expressão do Reino e o testemunho como coerência de vida.</p>
 
     <div class="transicao-conexao">
-      <h3>Como as duas etapas se conectam</h3>
-      <div class="transicao-grid">
-        <div class="transicao-card">
-          <span class="tc-label">Etapa 1</span>
-          <span>É a fundação</span>
-          <span>Ensina o que fazer</span>
-          <span>Apresenta as práticas</span>
-          <span>Cria a Regra de Vida</span>
-          <span>É o "por que"</span>
-        </div>
-        <div class="transicao-card">
-          <span class="tc-label">Etapa 2</span>
-          <span>É o aprofundamento</span>
-          <span>Ensina como fazer</span>
-          <span>Aprofunda cada prática</span>
-          <span>Preenche a Regra de Vida com práticas concretas</span>
-          <span>É o "como"</span>
-        </div>
-      </div>
+      <p>A Etapa 1 e a Etapa 2 não são duas jornadas diferentes. São duas partes de uma mesma jornada.</p>
       <blockquote>A Etapa 1 te deu o mapa. A Etapa 2 te ajuda a caminhar.</blockquote>
     </div>
+
+    <p class="transicao-reflexao">A transformação não acontece por conhecimento — acontece por prática. Você está pronto para dar o próximo passo?</p>
   </div>
 </div>`;
 
