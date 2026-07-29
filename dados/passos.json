@@ -1,0 +1,564 @@
+{
+  "etapas": [
+    {
+      "id": 1,
+      "titulo": "Curso Base",
+      "cor": "amarela",
+      "passos": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    {
+      "id": 2,
+      "titulo": "As 9 Práticas",
+      "cor": "verde",
+      "passos": [9, 10, 11, 12, 13, 14, 15, 16, 17]
+    }
+  ],
+  "passos": [
+    {
+      "id": 1,
+      "titulo": "O Grande Amor",
+      "subtitulo": "Conhecendo o amor de Deus",
+      "etapa": 1,
+      "status": "aberto",
+      "semana": 1,
+      "medite": {
+        "base_biblica": "João 3.16-17",
+        "devocional": "Deus nos amou primeiro. Antes de qualquer ação nossa, antes de qualquer mérito, o amor de Deus já estava sobre nós. Este é o fundamento de toda a jornada: não somos amados porque amamos, mas amamos porque Ele nos amou primeiro. O Grande Amor nos convida a descansar nesta verdade e a responder com gratidão."
+      },
+      "assista": {
+        "titulo": "O Grande Amor",
+        "url": ""
+      },
+      "aprofunde": [
+        { "tipo": "livro", "titulo": "O Deus que se Importa", "autor": "", "url": "" }
+      ],
+      "pratique": {
+        "desafio": "Escreva uma carta para Deus agradecendo pelo amor que você recebeu.",
+        "instrucoes": "Reserve 15 minutos em um lugar silencioso. Escreva livremente, sem se preocupar com o formato. Guarde a carta e releia no último passo da jornada."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "O amor de Deus na criação", "leitura": "Salmo 136" },
+          { "dia": "Terça", "tema": "O amor de Deus na aliança", "leitura": "Deuteronômio 7.6-9" },
+          { "dia": "Quarta", "tema": "O amor revelado em Jesus", "leitura": "1 João 4.7-12" },
+          { "dia": "Quinta", "tema": "O amor que nos transforma", "leitura": "Efésios 3.14-21" },
+          { "dia": "Sexta", "tema": "Respondendo ao amor", "leitura": "Romanos 12.1-2" },
+          { "dia": "Sábado", "tema": "Descanso no amor", "leitura": "Salmos 23" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Apocalipse 21.1-5" }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "O Chamado",
+      "subtitulo": "Respondendo ao convite de Jesus",
+      "etapa": 1,
+      "status": "aberto",
+      "semana": 2,
+      "medite": {
+        "base_biblica": "Mateus 4.18-22",
+        "devocional": "Jesus chama pessoas comuns para uma missão extraordinária. Os primeiros discípulos estavam ocupados com seu trabalho diário quando foram chamados. O chamado de Jesus não exige perfeição, mas disposição. Seguir a Cristo é deixar as redes e caminhar com Ele."
+      },
+      "assista": {
+        "titulo": "O Chamado",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Identifique uma 'rede' que você precisa deixar para seguir Jesus mais de perto.",
+        "instrucoes": "Reflita sobre o que tem ocupado seu coração e seu tempo. Pode ser um hábito, um medo, uma distração. Anote e apresente a Deus em oração."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "O chamado de Abraão", "leitura": "Gênesis 12.1-4" },
+          { "dia": "Terça", "tema": "O chamado de Moisés", "leitura": "Êxodo 3.1-12" },
+          { "dia": "Quarta", "tema": "O chamado dos discípulos", "leitura": "Marcos 1.16-20" },
+          { "dia": "Quinta", "tema": "O chamado de Paulo", "leitura": "Atos 9.1-19" },
+          { "dia": "Sexta", "tema": "Meu chamado hoje", "leitura": "Efésios 4.1-6" },
+          { "dia": "Sábado", "tema": "Discernindo a vontade", "leitura": "Provérbios 3.5-6" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 40.1-8" }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "A Graça",
+      "subtitulo": "Vivendo pela graça de Deus",
+      "etapa": 1,
+      "status": "aberto",
+      "semana": 3,
+      "medite": {
+        "base_biblica": "Efésios 2.1-10",
+        "devocional": "A graça é o favor imerecido de Deus. Não é algo que conquistamos ou merecemos — é um presente. Esta verdade nos liberta da religião baseada em desempenho e nos chama a viver em gratidão. A graça não é uma licença para pecar, mas o poder para viver de forma diferente."
+      },
+      "assista": {
+        "titulo": "A Graça",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Liste 5 coisas que você recebeu pela graça, não por mérito. Agradeça por cada uma.",
+        "instrucoes": "Mantenha esta lista visível durante a semana como lembrete diário da graça."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Graça na lei", "leitura": "Êxodo 34.4-7" },
+          { "dia": "Terça", "tema": "Graça sobre Judá", "leitura": "Oséias 2.14-23" },
+          { "dia": "Quarta", "tema": "Graça sobre você", "leitura": "Tito 3.3-7" },
+          { "dia": "Quinta", "tema": "Graça que transforma", "leitura": "Romanos 6.1-14" },
+          { "dia": "Sexta", "tema": "Graça que sustenta", "leitura": "2 Coríntios 12.7-10" },
+          { "dia": "Sábado", "tema": "Graça que envia", "leitura": "Atos 20.24" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 103.1-12" }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "A Fé",
+      "subtitulo": "Confiança que se torna obediência",
+      "etapa": 1,
+      "status": "aberto",
+      "semana": 4,
+      "medite": {
+        "base_biblica": "Hebreus 11.1-6",
+        "devocional": "Fé não é acreditar em algo apesar das evidências, mas confiar em Alguém apesar das circunstâncias. A fé genuína sempre resulta em obediência. Os heróis da fé não eram pessoas perfeitas, mas pessoas que confiaram em Deus e agiram com base nessa confiança."
+      },
+      "assista": {
+        "titulo": "A Fé",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Identifique uma área onde você precisa confiar mais em Deus e dê um passo prático de obediência.",
+        "instrucoes": "Escolha uma situação que você tem tentado controlar. Hoje, entregue-a a Deus em oração e tome uma atitude que demonstre confiança."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "A fé de Abraão", "leitura": "Gênesis 15.1-6" },
+          { "dia": "Terça", "tema": "Fé que move montanhas", "leitura": "Mateus 17.14-20" },
+          { "dia": "Quarta", "tema": "Fé e obras", "leitura": "Tiago 2.14-26" },
+          { "dia": "Quinta", "tema": "Fé em tempos difíceis", "leitura": "Habacuque 3.17-19" },
+          { "dia": "Sexta", "tema": "A corrida da fé", "leitura": "Hebreus 12.1-3" },
+          { "dia": "Sábado", "tema": "Fé que vê o invisível", "leitura": "2 Coríntios 4.16-18" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 27" }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "O Novo Nascimento",
+      "subtitulo": "Uma nova criação em Cristo",
+      "etapa": 1,
+      "status": "aberto",
+      "semana": 5,
+      "medite": {
+        "base_biblica": "João 3.1-8",
+        "devocional": "Nicodemos era um mestre em Israel, mas precisava aprender que o conhecimento não salva. O novo nascimento é uma obra do Espírito Santo que nos transforma de dentro para fora. Não se trata de melhorar o velho homem, mas de receber uma nova natureza."
+      },
+      "assista": {
+        "titulo": "O Novo Nascimento",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Converse com alguém sobre sua experiência de fé e como Deus tem transformado sua vida.",
+        "instrucoes": "Compartilhe seu testemunho de forma simples e sincera. Não precisa ser eloquente, precisa ser verdadeiro."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Nascer de novo", "leitura": "João 3.1-21" },
+          { "dia": "Terça", "tema": "Nova criação", "leitura": "2 Coríntios 5.14-17" },
+          { "dia": "Quarta", "tema": "Vida no Espírito", "leitura": "Romanos 8.1-11" },
+          { "dia": "Quinta", "tema": "Identidade em Cristo", "leitura": "Gálatas 2.19-21" },
+          { "dia": "Sexta", "tema": "Herdeiros com Cristo", "leitura": "Romanos 8.14-17" },
+          { "dia": "Sábado", "tema": "Vida abundante", "leitura": "João 10.7-10" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "1 Pedro 1.3-9" }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "O Fruto do Espírito",
+      "subtitulo": "O caráter de Cristo em nós",
+      "etapa": 1,
+      "status": "aberto",
+      "semana": 6,
+      "medite": {
+        "base_biblica": "Gálatas 5.16-25",
+        "devocional": "O Fruto do Espírito não é uma lista de coisas que devemos produzir, mas a descrição do caráter de Cristo sendo formado em nós. À medida que andamos no Espírito, estas qualidades aparecem naturalmente. Nosso papel não é 'tentar ser' amorosos, mas permanecer em Cristo."
+      },
+      "assista": {
+        "titulo": "O Fruto do Espírito",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Escolha uma das qualidades do Fruto do Espírito para praticar intencionalmente esta semana.",
+        "instrucoes": "Identifique qual fruto você mais precisa desenvolver. Ore por ele cada manhã e busque oportunidades de praticá-lo."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Amor e alegria", "leitura": "Romanos 5.1-5" },
+          { "dia": "Terça", "tema": "Paz e paciência", "leitura": "Filipenses 4.4-9" },
+          { "dia": "Quarta", "tema": "Bondade e benignidade", "leitura": "Efésios 4.29-32" },
+          { "dia": "Quinta", "tema": "Fidelidade", "leitura": "Lamentações 3.19-24" },
+          { "dia": "Sexta", "tema": "Mansidão e domínio próprio", "leitura": "Provérbios 16.32" },
+          { "dia": "Sábado", "tema": "Andar no Espírito", "leitura": "Romanos 8.5-9" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 1" }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "titulo": "A Oração",
+      "subtitulo": "Vida de comunicação com o Pai",
+      "etapa": 1,
+      "status": "aberto",
+      "semana": 7,
+      "medite": {
+        "base_biblica": "Mateus 6.5-15",
+        "devocional": "Jesus não ensinou a oração como um ritual, mas como um relacionamento. O Pai Nosso é um modelo que nos ensina a orar com simplicidade, confiança e perspectiva correta. Orar é falar com Deus como Filhos, não como estranhos."
+      },
+      "assista": {
+        "titulo": "A Oração",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Separe 10 minutos por dia para orar usando o modelo do Pai Nosso como guia.",
+        "instrucoes": "Cada dia, ore uma parte do Pai Nosso com calma, refletindo em cada palavra. Ao final da semana, ore o Pai Nosso completo com novas percepções."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Pai nosso", "leitura": "Mateus 6.5-15" },
+          { "dia": "Terça", "tema": "Orai sem cessar", "leitura": "1 Tessalonicenses 5.16-18" },
+          { "dia": "Quarta", "tema": "Confiança na oração", "leitura": "1 João 5.14-15" },
+          { "dia": "Quinta", "tema": "Oração e ansiedade", "leitura": "Filipenses 4.4-7" },
+          { "dia": "Sexta", "tema": "Jesus e a oração", "leitura": "Lucas 5.16" },
+          { "dia": "Sábado", "tema": "O Espírito intercede", "leitura": "Romanos 8.26-27" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 145" }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "titulo": "A Palavra",
+      "subtitulo": "A Bíblia como alimento diário",
+      "etapa": 1,
+      "status": "aberto",
+      "semana": 8,
+      "medite": {
+        "base_biblica": "2 Timóteo 3.14-17",
+        "devocional": "A Palavra de Deus é inspirada por Ele e útil para ensinar, repreender, corrigir e instruir. Mais do que um livro de regras, a Bíblia é a revelação de Deus que nos transforma. A leitura diária da Escritura não é um dever religioso, mas um encontro com o Deus vivo."
+      },
+      "assista": {
+        "titulo": "A Palavra",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Escolha um livro da Bíblia para ler integralmente nas próximas semanas (comece com Marcos ou Colossenses).",
+        "instrucoes": "Leia um capítulo por dia. Antes de ler, ore: 'Fala, Senhor, que teu servo ouve.' Depois, anote um versículo que chamou sua atenção."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "A Palavra viva", "leitura": "Hebreus 4.12-13" },
+          { "dia": "Terça", "tema": "Lâmpada para os pés", "leitura": "Salmo 119.105-112" },
+          { "dia": "Quarta", "tema": "A semente", "leitura": "Mateus 13.3-9, 18-23" },
+          { "dia": "Quinta", "tema": "Praticantes da Palavra", "leitura": "Tiago 1.19-25" },
+          { "dia": "Sexta", "tema": "A Palavra e a fé", "leitura": "Romanos 10.14-17" },
+          { "dia": "Sábado", "tema": "Meditação", "leitura": "Salmo 1.1-3" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 119.1-16" }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "titulo": "Comunhão",
+      "subtitulo": "Caminhando juntos",
+      "etapa": 2,
+      "status": "aberto",
+      "semana": 9,
+      "medite": {
+        "base_biblica": "Atos 2.42-47",
+        "devocional": "A igreja primativa nos mostra que a comunhão é essencial à vida cristã. Não fomos criados para caminhar sozinhos. A comunhão não é apenas estar juntos, mas compartilhar a vida — os fardos, as alegrias, os recursos, a fé. É na comunidade que crescemos e somos fortalecidos."
+      },
+      "assista": {
+        "titulo": "Comunhão",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Entre em contato com um irmão da comunidade para orar juntos esta semana.",
+        "instrucoes": "Pode ser presencial ou por chamada de vídeo. Compartilhem como está sendo a jornada e orem um pelo outro."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "A igreja como família", "leitura": "Efésios 2.19-22" },
+          { "dia": "Terça", "tema": "Uns pelos outros", "leitura": "Romanos 12.9-16" },
+          { "dia": "Quarta", "tema": "Perdão na comunidade", "leitura": "Colossenses 3.12-15" },
+          { "dia": "Quinta", "tema": "Servindo juntos", "leitura": "Gálatas 6.1-10" },
+          { "dia": "Sexta", "tema": "Unidade do Espírito", "leitura": "Efésios 4.1-6" },
+          { "dia": "Sábado", "tema": "A alegria da comunhão", "leitura": "Salmo 133" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Atos 4.32-35" }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "titulo": "Serviço",
+      "subtitulo": "Servindo como Jesus serviu",
+      "etapa": 2,
+      "status": "aberto",
+      "semana": 10,
+      "medite": {
+        "base_biblica": "João 13.1-17",
+        "devocional": "Jesus, o Mestre e Senhor, lavou os pés dos discípulos. O serviço não é uma tarefa secundária na vida cristã — é a essência do discipulado. Servir é reconhecer que tudo o que recebemos é para ser compartilhado. Não servimos para ser vistos, mas porque fomos servidos primeiro."
+      },
+      "assista": {
+        "titulo": "Serviço",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Realize um ato de serviço anônimo para alguém esta semana.",
+        "instrucoes": "Pode ser preparar uma refeição, ajudar com uma tarefa, enviar uma mensagem de encorajamento. O importante é que seja sem esperar reconhecimento."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Jesus servo", "leitura": "Filipenses 2.1-11" },
+          { "dia": "Terça", "tema": "Serviço e humildade", "leitura": "1 Pedro 5.5-7" },
+          { "dia": "Quarta", "tema": "Dons para servir", "leitura": "1 Pedro 4.10-11" },
+          { "dia": "Quinta", "tema": "O menor entre vós", "leitura": "Lucas 22.24-27" },
+          { "dia": "Sexta", "tema": "Serviço e amor", "leitura": "João 15.12-17" },
+          { "dia": "Sábado", "tema": "Servindo com alegria", "leitura": "Salmo 100" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Mateus 20.25-28" }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "titulo": "Mordomia",
+      "subtitulo": "Administrando os dons de Deus",
+      "etapa": 2,
+      "status": "breve",
+      "semana": 11,
+      "medite": {
+        "base_biblica": "Mateus 25.14-30",
+        "devocional": "Tudo o que temos é de Deus — tempo, talentos, recursos. Somos mordomos, não donos. A parábola dos talentos nos ensina que Deus nos confiou dons e espera que os multipliquemos. Mordomia não é sobre dar uma parte, mas reconhecer que tudo pertence a Ele e administrar com responsabilidade."
+      },
+      "assista": {
+        "titulo": "Mordomia",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Identifique um talento ou recurso que Deus lhe deu e use-o para abençoar alguém esta semana.",
+        "instrucoes": "Pode ser sua habilidade profissional, seu tempo, seus recursos financeiros, seu dom musical. Busque uma oportunidade concreta de usar esse dom para servir."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Tudo vem de Deus", "leitura": "1 Crônicas 29.10-14" },
+          { "dia": "Terça", "tema": "Mordomia do tempo", "leitura": "Efésios 5.15-17" },
+          { "dia": "Quarta", "tema": "Mordomia dos talentos", "leitura": "Mateus 25.14-30" },
+          { "dia": "Quinta", "tema": "Liberalidade", "leitura": "2 Coríntios 9.6-15" },
+          { "dia": "Sexta", "tema": "Mordomia da criação", "leitura": "Gênesis 2.15" },
+          { "dia": "Sábado", "tema": "Contentamento e confiança", "leitura": "1 Timóteo 6.6-10" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 24.1-2" }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "titulo": "Discipulado",
+      "subtitulo": "Fazendo discípulos",
+      "etapa": 2,
+      "status": "breve",
+      "semana": 12,
+      "medite": {
+        "base_biblica": "Mateus 28.18-20",
+        "devocional": "A Grande Comissão não é uma sugestão, é o mandato de Jesus. Fazer discípulos é o coração da missão da igreja. Não se trata apenas de converter pessoas, mas de ensiná-las a obedecer a tudo o que Jesus ordenou. Discipulado não é um programa, é um relacionamento intencional."
+      },
+      "assista": {
+        "titulo": "Discipulado",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Comece a orar por uma pessoa com quem você pode compartilhar a jornada de fé.",
+        "instrucoes": "Peça a Deus que mostre alguém que está aberto a crescer na fé. Não precisa ter todas as respostas — discipulado é caminhar junto."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Ide e fazei discípulos", "leitura": "Mateus 28.16-20" },
+          { "dia": "Terça", "tema": "Paulo e Timóteo", "leitura": "Filipenses 2.19-22" },
+          { "dia": "Quarta", "tema": "Jesus e os doze", "leitura": "Marcos 3.13-19" },
+          { "dia": "Quinta", "tema": " multiplicação", "leitura": "2 Timóteo 2.1-2" },
+          { "dia": "Sexta", "tema": "Discipulado é presença", "leitura": "João 14.25-27" },
+          { "dia": "Sábado", "tema": " discipulado é jornada", "leitura": "Lucas 9.23-25" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 78.1-8" }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "titulo": "Evangelismo",
+      "subtitulo": "Compartilhando as boas novas",
+      "etapa": 2,
+      "status": "breve",
+      "semana": 13,
+      "medite": {
+        "base_biblica": "1 Pedro 3.13-16",
+        "devocional": "Evangelismo não é um debate teológico, mas o compartilhamento natural de uma boa notícia. Pedro nos ensina que devemos estar preparados para falar da nossa esperança com mansidão e respeito. O testemunho mais poderoso é uma vida transformada pelo amor de Cristo."
+      },
+      "assista": {
+        "titulo": "Evangelismo",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Compartilhe com um amigo ou familiar o que Deus tem feito na sua vida durante esta jornada.",
+        "instrucoes": "Seja natural. Conte sua história de forma simples. Não force, apenas convide."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "O evangelho", "leitura": "Romanos 1.14-17" },
+          { "dia": "Terça", "tema": "Preparados para responder", "leitura": "1 Pedro 3.13-16" },
+          { "dia": "Quarta", "tema": "Pescadores de homens", "leitura": "Mateus 4.18-22" },
+          { "dia": "Quinta", "tema": "Felipe e o etíope", "leitura": "Atos 8.26-39" },
+          { "dia": "Sexta", "tema": " testemunho pessoal", "leitura": "João 9.13-25" },
+          { "dia": "Sábado", "tema": " ceifa é grande", "leitura": "Lucas 10.1-3" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 96" }
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "titulo": "Generosidade",
+      "subtitulo": "Vivendo uma vida de dar",
+      "etapa": 2,
+      "status": "breve",
+      "semana": 14,
+      "medite": {
+        "base_biblica": "2 Coríntios 9.6-15",
+        "devocional": "Deus ama quem dá com alegria. A generosidade não é calculada em valores, mas em disposição do coração. Quando damos, não estamos perdendo — estamos semeando. A generosidade reflete o caráter de Deus, que nos deu o Seu Filho. Somos generosos porque Ele foi generoso primeiro."
+      },
+      "assista": {
+        "titulo": "Generosidade",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Dê algo a alguém que não pode retribuir.",
+        "instrucoes": "Pode ser uma contribuição financeira, um presente, seu tempo. O importante é que a pessoa não tenha condição ou expectativa de retribuir. Faça em segredo, se possível."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Deus generoso", "leitura": "Tiago 1.16-18" },
+          { "dia": "Terça", "tema": "A viúva pobre", "leitura": "Marcos 12.41-44" },
+          { "dia": "Quarta", "tema": "Semeando generosidade", "leitura": "2 Coríntios 9.6-15" },
+          { "dia": "Quinta", "tema": "Generosidade e confiança", "leitura": "Provérbios 11.24-25" },
+          { "dia": "Sexta", "tema": "Amor em ação", "leitura": "1 João 3.16-18" },
+          { "dia": "Sábado", "tema": "Alegria de dar", "leitura": "Atos 20.33-35" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 112" }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "titulo": "Perseverança",
+      "subtitulo": "Continuando firmes até o fim",
+      "etapa": 2,
+      "status": "breve",
+      "semana": 15,
+      "medite": {
+        "base_biblica": "Hebreus 12.1-3",
+        "devocional": "A vida cristã é uma maratona, não uma corrida de 100 metros. Perseverança não é simplesmente 'aguentar', mas manter os olhos em Jesus enquanto corremos. A perseverança produz caráter, e o caráter produz esperança. Não desista — o Autor e Consumador da fé está com você."
+      },
+      "assista": {
+        "titulo": "Perseverança",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Escreva um versículo ou frase de perseverança e coloque em um lugar onde você veja todos os dias.",
+        "instrucoes": "Escolha uma promessa de Deus que fortaleça seu coração. Pode ser Heb 12.1-2, Is 40.31, ou Fp 1.6. Coloque no espelho, na geladeira ou na tela do celular."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Correndo a carreira", "leitura": "Hebreus 12.1-3" },
+          { "dia": "Terça", "tema": "Provações e alegria", "leitura": "Tiago 1.2-4" },
+          { "dia": "Quarta", "tema": "O socorro na fraqueza", "leitura": "Isaías 40.28-31" },
+          { "dia": "Quinta", "tema": "A perseverança de Jó", "leitura": "Tiago 5.7-11" },
+          { "dia": "Sexta", "tema": "Não desanimar", "leitura": "2 Coríntios 4.16-18" },
+          { "dia": "Sábado", "tema": "A recompensa da perseverança", "leitura": "Apocalipse 2.8-11" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 121" }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "titulo": "Testemunho",
+      "subtitulo": "Refletindo Cristo ao mundo",
+      "etapa": 2,
+      "status": "breve",
+      "semana": 16,
+      "medite": {
+        "base_biblica": "Mateus 5.13-16",
+        "devocional": "Vocês são a luz do mundo — não por mérito próprio, mas porque Cristo vive em nós. O testemunho não é sobre falar de Deus, mas sobre refletir Deus. Uma vida transformada é o sermão mais eloquente. Que as pessoas vejam nossas boas obras e glorifiquem ao Pai."
+      },
+      "assista": {
+        "titulo": "Testemunho",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Identifique uma área da sua vida que ainda não reflete Cristo e estabeleça um plano de mudança.",
+        "instrucoes": "Pode ser seu temperamento, seu uso do tempo, suas finanças, seus relacionamentos. Escolha uma área, ore sobre ela e busque um irmão para prestar contas."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Sal da terra e luz", "leitura": "Mateus 5.13-16" },
+          { "dia": "Terça", "tema": "Testemunho pessoal", "leitura": "1 Timóteo 4.11-16" },
+          { "dia": "Quarta", "tema": "Vida que preguiça", "leitura": "2 Coríntios 3.1-3" },
+          { "dia": "Quinta", "tema": "Boa reputação", "leitura": "Provérbios 22.1" },
+          { "dia": "Sexta", "tema": "Conversa e conduta", "leitura": "Colossenses 4.5-6" },
+          { "dia": "Sábado", "tema": "Impacto na comunidade", "leitura": "1 Pedro 2.11-12" },
+          { "dia": "Domingo", "tema": "Celebração", "leitura": "Salmo 40.1-5" }
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "titulo": "Missão",
+      "subtitulo": "Enviados para fazer a diferença",
+      "etapa": 2,
+      "status": "breve",
+      "semana": 17,
+      "medite": {
+        "base_biblica": "João 20.19-23",
+        "devocional": "Assim como o Pai enviou a Jesus, Jesus nos envia. A missão não é apenas para pastores ou missionários — é para todo discípulo de Cristo. O destino de toda esta jornada é o envio. Você foi preparado, edificado, transformado para ser enviado ao mundo como embaixador de Cristo."
+      },
+      "assista": {
+        "titulo": "Missão",
+        "url": ""
+      },
+      "aprofunde": [],
+      "pratique": {
+        "desafio": "Defina um compromisso missionário concreto para os próximos meses — local ou global.",
+        "instrucoes": "Pode ser servir em um ministério da igreja, apoiar um missionário, iniciar um grupo de estudos bíblicos, ou se preparar para uma ação missionária. Ore e decida."
+      },
+      "organizese": {
+        "dias": [
+          { "dia": "Segunda", "tema": "Enviados por Jesus", "leitura": "João 20.19-23" },
+          { "dia": "Terça", "tema": "O Deus que envia", "leitura": "Isaías 6.1-8" },
+          { "dia": "Quarta", "tema": "Missão local", "leitura": "Atos 1.6-8" },
+          { "dia": "Quinta", "tema": "Missão global", "leitura": "Romanos 15.18-21" },
+          { "dia": "Sexta", "tema": "A igreja enviada", "leitura": "1 Pedro 2.9-10" },
+          { "dia": "Sábado", "tema": "Celebração do envio", "leitura": "Mateus 9.35-38" },
+          { "dia": "Domingo", "tema": "Celebração Final", "leitura": "Apocalipse 7.9-12" }
+        ]
+      }
+    }
+  ]
+}

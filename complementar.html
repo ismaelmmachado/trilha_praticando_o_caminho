@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Material Complementar · Praticando o Caminho</title>
+  <meta name="description" content="Recursos complementares para a jornada de discipulado: livros, podcasts, músicas, quizzes e guias." />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <style>
+    .complementar-grid {
+      display: grid;
+      gap: var(--space-lg);
+    }
+    .comp-categoria {
+      margin-bottom: var(--space-lg);
+    }
+    .comp-categoria h2 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-md);
+      padding-bottom: var(--space-sm);
+      border-bottom: 2px solid var(--accent-soft);
+    }
+    .comp-lista {
+      display: grid;
+      gap: var(--space-md);
+    }
+    .comp-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding: var(--space-md);
+      border-radius: var(--radius-md);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+    }
+    .comp-item-info strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+    .comp-item-info span {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+    .comp-link {
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--radius-full);
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    @media (max-width: 480px) {
+      .comp-item {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+      }
+      .comp-link { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Praticando o Caminho - Página inicial">
+        Praticando o Caminho
+        <span>Comunidade Vitral</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="complementar.html" class="ativo">Material Complementar</a>
+        <a href="facilitador.html">Guia do Facilitador</a>
+      </nav>
+    </div>
+  </header>
+
+  <header class="mobile-header" role="banner">
+    <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="complementar.html" class="ativo">Material</a>
+      <a href="facilitador.html">Facilitador</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Material Complementar</span>
+      </nav>
+    </div>
+
+    <div class="container" style="padding:var(--space-xl) 0 var(--space-2xl);">
+      <div class="page-header" style="padding-top:0;border-bottom:none;">
+        <h1 style="font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.03em;">
+          Material Complementar
+        </h1>
+        <p style="color:var(--color-muted);margin-top:var(--space-sm);font-size:1.1rem;max-width:640px;">
+          Recursos adicionais para aprofundar sua jornada de discipulado.
+        </p>
+      </div>
+
+      <div class="complementar-grid">
+        <div class="comp-categoria">
+          <h2>📚 Livros Recomendados</h2>
+          <div class="comp-lista">
+            <div class="comp-item">
+              <div class="comp-item-info">
+                <strong>O Deus que se Importa</strong>
+                <span>Autor a definir · Teologia do cuidado de Deus</span>
+              </div>
+              <span class="comp-link" style="opacity:0.5">Em breve</span>
+            </div>
+            <div class="comp-item">
+              <div class="comp-item-info">
+                <strong>Discipulado: O Caminho do Seguidor de Cristo</strong>
+                <span>Autor a definir · Fundamentos do discipulado</span>
+              </div>
+              <span class="comp-link" style="opacity:0.5">Em breve</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-categoria">
+          <h2>🎧 Podcasts</h2>
+          <div class="comp-lista">
+            <div class="comp-item">
+              <div class="comp-item-info">
+                <strong>Praticando o Caminho</strong>
+                <span>Podcast oficial da jornada · Episódios semanais</span>
+              </div>
+              <span class="comp-link" style="opacity:0.5">Em breve</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-categoria">
+          <h2>🎵 Músicas</h2>
+          <div class="comp-lista">
+            <div class="comp-item">
+              <div class="comp-item-info">
+                <strong>Playlists da Jornada</strong>
+                <span>Músicas que acompanham cada etapa do discipulado</span>
+              </div>
+              <span class="comp-link" style="opacity:0.5">Em breve</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-categoria">
+          <h2>📝 Guias e Recursos</h2>
+          <div class="comp-lista">
+            <div class="comp-item">
+              <div class="comp-item-info">
+                <strong>Diário de Bordo da Jornada</strong>
+                <span>PDF para download · Acompanhe seu progresso</span>
+              </div>
+              <span class="comp-link" style="opacity:0.5">Em breve</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <strong>Praticando o Caminho</strong>
+      <p>Comunidade Vitral · Uma jornada de discipulado</p>
+    </div>
+  </footer>
+</body>
+</html>
