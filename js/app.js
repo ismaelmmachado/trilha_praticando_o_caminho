@@ -86,7 +86,7 @@ function renderEtapa(etapa, passos, container) {
   etapaData.forEach(p => {
     const locked = p.status === 'breve';
     html += `
-      <a class="step-card${locked ? ' locked' : ''}" href="${locked ? '#' : 'passo.html?id=' + p.id}">
+      <a class="step-card${locked ? ' locked' : ''}" href="${locked ? '#' : 'passo-' + p.id + '.html'}">
         <div class="step-card-top">
           <div class="step-number">${p.id}</div>
           <span class="step-status ${p.status}">${p.status === 'aberto' ? 'Disponível' : 'Em breve'}</span>
