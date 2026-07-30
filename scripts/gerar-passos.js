@@ -334,7 +334,7 @@ function gerarPagina(passo, todosPassos) {
       <nav class="nav" role="navigation" aria-label="Navegação principal">
         <a href="index.html">Início</a>
         <a href="complementar.html">Material Complementar</a>
-        <a href="facilitador.html">Guia do Facilitador</a>
+        <a href="facilitador.html">Guia</a>
       </nav>
     </div>
   </header>
@@ -343,7 +343,7 @@ function gerarPagina(passo, todosPassos) {
     <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
       <a href="index.html">Início</a>
       <a href="complementar.html">Material</a>
-      <a href="facilitador.html">Facilitador</a>
+      <a href="facilitador.html">Guia</a>
     </nav>
   </header>
 

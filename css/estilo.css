@@ -175,7 +175,7 @@ ul { list-style: none; }
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: var(--accent-gradient);
   color: white;
   box-shadow: 0 4px 14px var(--accent-border);
 }
@@ -715,7 +715,7 @@ ul { list-style: none; }
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-lg);
   border-radius: var(--radius-full);
-  background: var(--accent);
+  background: var(--accent-gradient);
   color: white;
   font-weight: 600;
   font-size: 0.9rem;
@@ -755,36 +755,6 @@ ul { list-style: none; }
   border-radius: var(--radius-md);
 }
 
-/* Aprofunde boxes */
-.download-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  min-height: 54px;
-  padding: 0 24px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #0d9466, #0b6f4d);
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-  box-shadow: 0 14px 30px rgba(13, 148, 102, .22);
-  transition: all .25s ease;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-}
-
-.download-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 36px rgba(13, 148, 102, .28);
-}
-
-.download-icon {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
 /* Aprofunde list */
 .aprofunde-list {
   display: grid;
@@ -799,7 +769,7 @@ ul { list-style: none; }
   padding: 16px;
   border-radius: 18px;
   background: linear-gradient(180deg, #fff, #fbfcfa);
-  border: 1px solid rgba(13, 148, 102, .08);
+  border: 1px solid var(--accent-border);
 }
 
 .aprofunde-item-content {
@@ -816,8 +786,8 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(13, 148, 102, .08);
-  border: 1px solid rgba(13, 148, 102, .10);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
   font-size: 1.2rem;
   flex-shrink: 0;
 }
@@ -845,9 +815,9 @@ ul { list-style: none; }
   white-space: nowrap;
   font-size: 13px;
   font-weight: 800;
-  color: #0b6f4d;
-  background: rgba(13, 148, 102, .08);
-  border: 1px solid rgba(13, 148, 102, .10);
+  color: var(--accent-text);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -877,7 +847,7 @@ ul { list-style: none; }
   padding: 14px;
   border-radius: 16px;
   background: linear-gradient(180deg, #fff, #fbfcfa);
-  border: 1px solid rgba(13, 148, 102, .08);
+  border: 1px solid var(--accent-border);
 }
 
 .ferramenta-item-content {
@@ -894,8 +864,8 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(13, 148, 102, .08);
-  border: 1px solid rgba(13, 148, 102, .10);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
   font-size: 1.1rem;
   flex-shrink: 0;
 }
@@ -923,16 +893,16 @@ ul { list-style: none; }
   white-space: nowrap;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #0b6f4d;
-  background: rgba(13, 148, 102, .08);
-  border: 1px solid rgba(13, 148, 102, .10);
+  color: var(--accent-text);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
   text-decoration: none;
   flex-shrink: 0;
   transition: .2s ease;
 }
 
 .ferramenta-link:hover {
-  background: rgba(13, 148, 102, .14);
+  background: var(--accent-hover);
 }
 
 /* Week plan grid (2 columns) */
@@ -946,14 +916,14 @@ ul { list-style: none; }
   padding: 16px;
   border-radius: 20px;
   background: linear-gradient(180deg, #fff, #fbfcfa);
-  border: 1px solid rgba(13, 148, 102, .08);
+  border: 1px solid var(--accent-border);
 }
 
 .week-day-card strong {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
-  color: #0b6f4d;
+  color: var(--accent-text);
   font-weight: 700;
 }
 
