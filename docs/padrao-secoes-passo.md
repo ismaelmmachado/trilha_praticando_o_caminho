@@ -98,6 +98,191 @@ Renderizadores do novo formato:
 | `renderPratique()` | Experimento + pergunta (ou fallback legado) |
 | `renderOrganizese()` | Grid 7 dias |
 
+## Layout / Visual Contract
+
+Cada seção segue a estrutura HTML e classes CSS abaixo. Manter fielmente ao replicar.
+
+### Para Começar
+
+```html
+<div class="step-section">
+  <div class="step-section-header">
+    <div class="section-icon">📖</div>
+    <h2>Para Começar</h2>
+  </div>
+  <div class="step-section-content">
+    <p>{resumo}</p>
+    <div class="para-comecar-footer">
+      <a href="{pdf_url}" class="download-btn" target="_blank" download>
+        <span class="download-icon">↓</span>
+        Baixar Apostila em PDF
+      </a>
+    </div>
+  </div>
+</div>
+```
+
+- `.download-btn`: gradiente 135deg `#0d9466 → #0b6f4d`, box-shadow `0 14px 30px` verde, border-radius 999px, min-height 54px, font-weight 700, hover translateY(-2px)
+- `.para-comecar-footer`: border-top 1px solid `var(--color-border)`, margin-top `var(--space-lg)`, padding-top `var(--space-md)`
+
+### Ferramentas para o Caminho
+
+```html
+<div class="step-section">
+  <div class="step-section-header">
+    <div class="section-icon">🛠️</div>
+    <h2>Ferramentas para o Caminho</h2>
+  </div>
+  <div class="step-section-content">
+    <p class="ferramentas-intro">Ferramentas que podem apoiar sua caminhada:</p>
+    <div class="ferramentas-list">
+      <div class="ferramenta-item">
+        <div class="ferramenta-item-content">
+          <span class="ferramenta-icon">📖</span>
+          <div class="ferramenta-info">
+            <strong>Bible App (YouVersion)</strong>
+            <span>A Bíblia no seu bolso. Siga a Comunidade Vitral.</span>
+          </div>
+        </div>
+        <a class="ferramenta-link" href="https://..." target="_blank">Baixar</a>
+      </div>
+      <!-- + Lectio 365 + Vitral no Spotify -->
+    </div>
+  </div>
+</div>
+```
+
+- `.ferramenta-item`: flex space-between, padding 14px, border-radius 16px, bg linear-gradient(180deg, #fff, #fbfcfa), border 1px rgba(13,148,102,.08)
+- `.ferramenta-icon`: 40×40px, border-radius 12px, bg rgba(13,148,102,.08), flex-shrink 0
+- `.ferramenta-link`: min-height 36px, border-radius 999px, color `#0b6f4d`, font-weight 700, bg rgba(13,148,102,.08)
+
+### Ouça
+
+```html
+<div class="step-section">
+  <div class="step-section-header">
+    <div class="section-icon">🎧</div>
+    <h2>Ouça: {titulo}</h2>
+  </div>
+  <div class="step-section-content">
+    <div class="ouca-placeholder">
+      <iframe class="spotify-embed" src="{spotify_url}" allowfullscreen></iframe>
+      <!-- fallback: -->
+      <p style="color:var(--color-muted);padding:2rem;text-align:center;">Em breve</p>
+    </div>
+  </div>
+</div>
+```
+
+- `.ouca-placeholder`: aspect-ratio 16/9, border-radius `var(--radius-md)`, bg `var(--color-bg)`, border 1px `var(--color-border)`, flex centered
+- `.spotify-embed`: width 100%, height 100%, border none, border-radius `var(--radius-md)`
+
+### Aprofunde
+
+```html
+<div class="step-section">
+  <div class="step-section-header">
+    <div class="section-icon">📚</div>
+    <h2>Aprofunde</h2>
+  </div>
+  <div class="step-section-content">
+    <div class="aprofunde-list">
+      <div class="aprofunde-item">
+        <div class="aprofunde-item-content">
+          <span class="aprofunde-item-icon">📖</span>
+          <div class="aprofunde-item-info">
+            <strong>{titulo}</strong>
+            <span>{autor} · Livro Sugerido</span>
+          </div>
+        </div>
+        <a class="aprofunde-link" href="{url}" target="_blank">Acessar</a>
+        <!-- fallback: <span class="aprofunde-link is-empty">Em breve</span> -->
+      </div>
+      <!-- + Música Sugerida -->
+    </div>
+  </div>
+</div>
+```
+
+- `.aprofunde-item`: flex space-between, padding 16px, border-radius 18px, bg linear-gradient(180deg, #fff, #fbfcfa), border 1px rgba(13,148,102,.08)
+- `.aprofunde-item-icon`: 44×44px, border-radius 14px, bg rgba(13,148,102,.08), font-size 1.2rem
+- `.aprofunde-link`: min-height 40px, border-radius 999px, color `#0b6f4d`, font-weight 800, bg rgba(13,148,102,.08)
+- `.aprofunde-link.is-empty`: opacity 0.5, cursor default
+
+### Pratique
+
+```html
+<div class="step-section">
+  <div class="step-section-header">
+    <div class="section-icon">🎯</div>
+    <h2>Pratique</h2>
+  </div>
+  <div class="step-section-content">
+    <div class="pratique-experimento">
+      <strong class="pratique-label">Praticar</strong>
+      <p>{experimento}</p>
+    </div>
+    <div class="pratique-pergunta">
+      <strong>Pergunta da semana</strong>
+      <p>{pergunta}</p>
+    </div>
+  </div>
+</div>
+```
+
+- `.pratique-experimento`: font-size 1.05rem, padding `var(--space-md)`, bg `var(--color-surface)`, border-radius `var(--radius-md)`, border 1px `var(--color-border)`, margin-bottom `var(--space-md)`
+- `.pratique-label`: uppercase, letter-spacing 0.03em, font-weight 600, color `var(--color-muted)`
+- `.pratique-pergunta`: padding `var(--space-md)`, border-radius `var(--radius-md)`, bg gradient accent-soft, border 1px `var(--accent-soft)`
+- `.pratique-pergunta strong`: uppercase, color `var(--accent-text)`, letter-spacing 0.03em
+
+### Organize-se
+
+```html
+<div class="step-section">
+  <div class="step-section-header">
+    <div class="section-icon">📋</div>
+    <h2>Organize-se</h2>
+  </div>
+  <div class="step-section-content">
+    <div class="week-plan-grid">
+      <div class="week-day-card">
+        <strong>Segunda-feira</strong>
+        <span class="day-empty">Em breve</span>
+        <!-- ou: <span>{tema}</span> + <span class="day-leitura">{leitura}</span> -->
+      </div>
+      <!-- × 7 dias (Seg a Dom) -->
+    </div>
+  </div>
+</div>
+```
+
+- `.week-plan-grid`: grid 2 colunas, gap 14px. Responsivo (≤768px): 1 coluna
+- `.week-day-card`: padding 16px, border-radius 20px, bg linear-gradient(180deg, #fff, #fbfcfa), border 1px rgba(13,148,102,.08)
+- `.week-day-card strong`: color `#0b6f4d`, font-weight 700, font-size 14px
+- `.day-empty`: color `var(--color-muted)`, font-style italic
+- `.day-leitura`: font-size 0.8rem, font-style italic, margin-top 6px
+
+## Checklist de replicação
+
+Para cada passo em `dados/passos.json`:
+
+- [ ] `para_comecar.resumo` — texto acolhedor (só a abertura, NÃO o devocional inteiro)
+- [ ] `para_comecar.apostila_pdf` — "/apostilas/passo-{id}.pdf"
+- [ ] `ouca.titulo` — título do áudio
+- [ ] `ouca.spotify_url` — URL embed Spotify ou ""
+- [ ] `aprofunde.livro` — { titulo, autor, url } ou {}
+- [ ] `aprofunde.musica` — { titulo, artista, url } ou {}
+- [ ] `pratique.experimento` — ação concreta, tom acolhedor, sem meta (A+B combinado)
+- [ ] `pratique.pergunta` — pergunta para levar no bolso, sem resposta definitiva
+- [ ] `organizese.dias` — array 7 objetos { dia, tema, leitura } ou vazio
+
+Após preencher JSON:
+
+- [ ] Rodar `node scripts/gerar-passos.js`
+- [ ] Verificar ordem: Para Começar → Ferramentas → Ouça → Aprofunde → Pratique → Organize-se
+- [ ] Verificar fallbacks ("Em breve" para campos vazios)
+- [ ] Abrir página no navegador e conferir layout visual
+
 ## Histórico
 
 | Data | Versão | Mudança |

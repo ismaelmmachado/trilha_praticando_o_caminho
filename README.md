@@ -15,7 +15,7 @@ Cada passo contém 6 seções fixas:
 2. **Ferramentas para o Caminho** — apps e ferramentas de apoio (Bible App, Lectio 365, Spotify)
 3. **Ouça** — podcast/áudio da semana (embed Spotify)
 4. **Aprofunde** — livro sugerido + música sugerida
-5. **Pratique** — convite semanal + pergunta para refletir
+5. **Pratique** — experimento semanal + pergunta para refletir
 6. **Organize-se** — grade de segunda a domingo com ações diárias
 
 ## Site
