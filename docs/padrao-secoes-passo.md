@@ -283,6 +283,22 @@ Após preencher JSON:
 - [ ] Verificar fallbacks ("Em breve" para campos vazios)
 - [ ] Abrir página no navegador e conferir layout visual
 
+## Nomenclatura
+
+Evitar o termo "Facilitador" em textos visíveis ao usuário, pois quem discipula também é discípulo.
+
+| Onde | Como estava | Como fica |
+|------|-------------|-----------|
+| Página do facilitador | "Guia do Facilitador" | "Guia" |
+| Seção de abertura | "O Papel do Facilitador" | "Seu Papel" |
+| Seção de checklist | "Checklist do Facilitador" | "Checklist" |
+| Nav (desktop) | "Guia do Facilitador" | "Guia" |
+| Nav (mobile) | "Facilitador" | "Guia" |
+| Breadcrumb | "Guia do Facilitador" | "Guia" |
+| `<title>` | "Guia do Facilitador · Praticando o Caminho" | "Guia · Praticando o Caminho" |
+
+A meta description (SEO) pode manter "Guia para facilitadores" por ser texto não visível.
+
 ## Histórico
 
 | Data | Versão | Mudança |
