@@ -35,3 +35,26 @@ git commit -m "<tipo>: <descrição>"
 git tag <tag-name>
 git push origin <branch> --tags
 ```
+
+## Work State
+
+### Tags no repositório
+- `refactor-ajustes-estruturais` — correção de cor Etapa 2, renomeio facilitador→mapa, inline styles removidos
+- `fix-hero-label` — hero-label "ESTAÇÃO 2 — PRATICANDO O CAMINHO"
+- `fix-ux-ui-ajustes` — PDF links → "Em breve", indicador progresso, aria-hidden, noscript, back-to-top, tokens, inline style app.js
+- `chore-limpeza-css` — variáveis não usadas removidas, back-to-top href corrigido, data-etapa removido
+
+### Pendências (conteúdo)
+Todo conteúdo multimídia está como "Em breve" — aguardando material:
+- Vídeos (assista.url em `dados/passos.json`)
+- Áudios Spotify (ouca.spotify_url)
+- Músicas sugeridas (aprofunde.musica)
+- Grade semanal (organizese.dias)
+- Links de livros (aprofunde.livro.url)
+- PDFs das apostilas (`/apostilas/passo-N.pdf` não existem)
+
+### Estrutura
+- `index.html` sem `data-etapa` (neutro — :root fallback no CSS)
+- Todos os HTMLs com `aria-hidden` em ícones, `back-to-top`, `noscript` fallback
+- `css/tokens.css` limpo (9 variáveis órfãs removidas)
+- Gerador `scripts/gerar-passos.js` atualizado com todas as mudanças de template
