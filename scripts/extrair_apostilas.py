@@ -213,7 +213,7 @@ def main():
             print(f"  MISSING Passo {pid}: not found in extracted data")
     
     etapas = [
-        {'id': 1, 'titulo': 'Curso Base', 'cor': 'amarela', 'passos': [1, 2, 3, 4, 5, 6, 7, 8]},
+        {'id': 1, 'titulo': 'Início da Jornada', 'cor': 'amarela', 'passos': [1, 2, 3, 4, 5, 6, 7, 8]},
         {'id': 2, 'titulo': 'As 9 Práticas', 'cor': 'verde', 'passos': [9, 10, 11, 12, 13, 14, 15, 16, 17]},
     ]
     

@@ -6,7 +6,7 @@ Minisite da jornada de discipulado **Praticando o Caminho** da **Comunidade Vitr
 
 | Etapa | Passos | Tema | Cor |
 |-------|--------|------|-----|
-| 1 — Curso Base | 1 a 8 | Fundamentos do discipulado | 🟡 Amarela |
+| 1 — Início da Jornada | 1 a 8 | Fundamentos do discipulado | 🟡 Amarela |
 | 2 — As 9 Práticas | 9 a 17 | Práticas da vida cristã | 🟢 Verde |
 
 Cada passo contém 5 seções fixas:

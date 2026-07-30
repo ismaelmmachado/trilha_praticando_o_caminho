@@ -18,7 +18,7 @@ function renderParaComecar(passo) {
       <div class="para-comecar-footer">
         <a href="${pdfUrl}" class="download-btn" target="_blank" download>
           <span class="download-icon">↓</span>
-          Baixar Apostila
+          Baixar Apostila em PDF
         </a>
       </div>
     </div>
@@ -77,37 +77,39 @@ function renderAprofunde(passo) {
   if (passo.aprofunde && passo.aprofunde.livro !== undefined) {
     const livro = passo.aprofunde.livro;
     const musica = passo.aprofunde.musica;
+    const renderItem = (icone, label, item) => {
+      if (item && item.titulo) {
+        return `<div class="aprofunde-item">
+          <div class="aprofunde-item-content">
+            <span class="aprofunde-item-icon">${icone}</span>
+            <div class="aprofunde-item-info">
+              <strong>${escapeHtml(item.titulo)}</strong>
+              <span>${item.autor || item.artista ? escapeHtml(item.autor || item.artista) + ' · ' : ''}${label}</span>
+            </div>
+          </div>
+          ${item.url ? `<a class="aprofunde-link" href="${escapeHtml(item.url)}" target="_blank">Acessar</a>` : '<span class="aprofunde-link is-empty">Em breve</span>'}
+        </div>`;
+      }
+      return `<div class="aprofunde-item">
+        <div class="aprofunde-item-content">
+          <span class="aprofunde-item-icon">${icone}</span>
+          <div class="aprofunde-item-info">
+            <strong>${label}</strong>
+            <span>Em breve</span>
+          </div>
+        </div>
+        <span class="aprofunde-link is-empty">Em breve</span>
+      </div>`;
+    };
     return `<div class="step-section">
     <div class="step-section-header">
       <div class="section-icon">📚</div>
       <h2>Aprofunde</h2>
     </div>
     <div class="step-section-content">
-      <div class="aprofunde-boxes">
-        <div class="aprofunde-box">
-          <div class="aprofunde-box-header">
-            <span class="aprofunde-box-icon">📖</span>
-            <strong>Livro Sugerido</strong>
-          </div>
-          ${livro && livro.titulo ? `
-          <div class="aprofunde-box-body">
-            <span class="aprofunde-item-titulo">${escapeHtml(livro.titulo)}</span>
-            ${livro.autor ? `<span class="aprofunde-item-autor">${escapeHtml(livro.autor)}</span>` : ''}
-            ${livro.url ? `<a class="resource-link" href="${escapeHtml(livro.url)}" target="_blank">Acessar</a>` : '<span class="aprofunde-item-breve">Em breve</span>'}
-          </div>` : '<p class="aprofunde-item-breve" style="padding:var(--space-md)">Em breve</p>'}
-        </div>
-        <div class="aprofunde-box">
-          <div class="aprofunde-box-header">
-            <span class="aprofunde-box-icon">🎵</span>
-            <strong>Música Sugerida</strong>
-          </div>
-          ${musica && musica.titulo ? `
-          <div class="aprofunde-box-body">
-            <span class="aprofunde-item-titulo">${escapeHtml(musica.titulo)}</span>
-            ${musica.artista ? `<span class="aprofunde-item-autor">${escapeHtml(musica.artista)}</span>` : ''}
-            ${musica.url ? `<a class="resource-link" href="${escapeHtml(musica.url)}" target="_blank">Acessar</a>` : '<span class="aprofunde-item-breve">Em breve</span>'}
-          </div>` : '<p class="aprofunde-item-breve" style="padding:var(--space-md)">Em breve</p>'}
-        </div>
+      <div class="aprofunde-list">
+        ${renderItem('📖', 'Livro Sugerido', livro)}
+        ${renderItem('🎵', 'Música Sugerida', musica)}
       </div>
     </div>
   </div>`;
@@ -163,18 +165,12 @@ function renderOrganizese(passo) {
       <div class="section-icon">📋</div>
       <h2>Organize-se</h2>
     </div>
-    <div class="step-section-content">`;
-    if (passo.organizese.desafio_semana) {
-      html += `<div class="desafio-semana-box">
-        <strong>Desafio da Semana</strong>
-        <span>${escapeHtml(passo.organizese.desafio_semana).replace(/\n/g, '<br>')}</span>
-      </div>`;
-    }
-    html += `<div class="organize-grid">`;
+    <div class="step-section-content">
+      <div class="week-plan-grid">`;
     passo.organizese.dias.forEach(d => {
-      html += `<div class="organize-day">
+      html += `<div class="week-day-card">
         <strong>${escapeHtml(d.dia)}</strong>
-        ${d.tema ? `<p>${escapeHtml(d.tema).replace(/\n/g, '<br>')}</p>` : '<p class="day-empty">—</p>'}
+        ${d.tema ? `<span>${escapeHtml(d.tema).replace(/\n/g, '<br>')}</span>` : '<span class="day-empty">Em breve</span>'}
         ${d.leitura ? `<span class="day-leitura">${escapeHtml(d.leitura)}</span>` : ''}
       </div>`;
     });
@@ -229,7 +225,7 @@ function escapeHtml(text) {
 }
 
 function gerarPagina(passo, todosPassos) {
-  const etapaNome = passo.etapa === 1 ? 'Curso Base' : 'As 9 Práticas';
+  const etapaNome = passo.etapa === 1 ? 'Início da Jornada' : 'As 9 Práticas';
   const etapaCor = passo.etapa === 1 ? 'amarela' : 'verde';
   const corAttr = passo.etapa === 1 ? 'data-etapa="1"' : 'data-etapa="2"';
 
