@@ -55,6 +55,37 @@
       font-weight: 600;
       white-space: nowrap;
     }
+    .podcast-card {
+      padding: var(--space-lg);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(13, 148, 102, .08), rgba(13, 148, 102, .03));
+      border: 1px solid rgba(13, 148, 102, .14);
+    }
+    .podcast-card-content p {
+      margin: 0 0 var(--space-sm);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--color-text);
+    }
+    .podcast-convite {
+      font-weight: 600;
+      color: var(--accent-text);
+      font-style: italic;
+    }
+    .podcast-card-actions {
+      display: flex;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+      flex-wrap: wrap;
+    }
+    .podcast-link {
+      min-height: 44px;
+      padding: 0 var(--space-lg) !important;
+      display: inline-flex !important;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: 0.9rem !important;
+    }
     @media (max-width: 480px) {
       .comp-item {
         flex-direction: column;
@@ -139,6 +170,20 @@
                 <span>Podcast oficial da jornada · Episódios semanais</span>
               </div>
               <span class="comp-link" style="opacity:0.5">Em breve</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-categoria">
+          <h2>🎙️ Podcast da Comunidade Vitral</h2>
+          <div class="podcast-card">
+            <div class="podcast-card-content">
+              <p>Você sabia que a Comunidade Vitral tem um podcast no Spotify? É um espaço para continuar caminhando juntos entre os encontros — com mensagens, reflexões e conversas que alimentam a alma. Dá para ouvir no caminho do trabalho, enquanto arruma a casa ou naquela pausa do dia.</p>
+              <p class="podcast-convite">Aperte o play e venha caminhar conosco.</p>
+            </div>
+            <div class="podcast-card-actions">
+              <a class="comp-link podcast-link" href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank">🎧 Ouvir no Spotify</a>
+              <a class="comp-link podcast-link" href="https://www.spotify.com/download/" target="_blank">📲 Baixar o Spotify</a>
             </div>
           </div>
         </div>
