@@ -9,13 +9,14 @@ Minisite da jornada de discipulado **Praticando o Caminho** da **Comunidade Vitr
 | 1 — Início da Jornada | 1 a 8 | Fundamentos do discipulado | 🟡 Amarela |
 | 2 — As 9 Práticas | 9 a 17 | Práticas da vida cristã | 🟢 Verde |
 
-Cada passo contém 5 seções fixas:
+Cada passo contém 6 seções fixas:
 
-1. **Medite** — base bíblica + devocional (conteúdo das apostilas)
-2. **Assista** — vídeo/mensagem do encontro (placeholders — sem vídeos ainda)
-3. **Aprofunde** — referência ao livro *Praticando o Caminho* de John Mark Comer, com capítulo por passo
-4. **Pratique** — oração semanal
-5. **Organize-se** — desafio da semana (único, sem plano diário)
+1. **Para Começar** — resumo acolhedor + botão de download da apostila
+2. **Ferramentas para o Caminho** — apps e ferramentas de apoio (Bible App, Lectio 365, Spotify)
+3. **Ouça** — podcast/áudio da semana (embed Spotify)
+4. **Aprofunde** — livro sugerido + música sugerida
+5. **Pratique** — convite semanal + pergunta para refletir
+6. **Organize-se** — grade de segunda a domingo com ações diárias
 
 ## Site
 
@@ -30,17 +31,18 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
 ```
 /
 ├── index.html              # Home (etapas + grid de passos + transição)
-├── passo.html              # Template único de passo (?id=1..17)
+├── passo-{1..17}.html      # Páginas estáticas geradas (1 por passo)
 ├── facilitador.html        # Guia do facilitador (10 seções + checklist)
 ├── complementar.html       # Material complementar
 ├── dados/
-│   └── passos.json         # Conteúdo real dos 17 passos (68164 chars devocionais)
+│   └── passos.json         # Conteúdo real dos 17 passos
+├── scripts/
+│   └── gerar-passos.js     # Gerador de páginas estáticas dos passos
 ├── css/
 │   ├── tokens.css          # Design tokens (variáveis CSS)
 │   └── estilo.css          # Componentes e layout
 ├── js/
-│   ├── app.js              # Renderização da home + transição Etapa 1→2
-│   └── passos.js           # Renderização do passo individual (5 seções)
+│   └── app.js              # Renderização da home + transição Etapa 1→2
 └── design-system/
     └── praticando-o-caminho-vitral/
         ├── MASTER.md       # Design system global

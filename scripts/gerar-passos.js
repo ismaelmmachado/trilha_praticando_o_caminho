@@ -31,7 +31,7 @@ function renderParaTeAjudar() {
   return `<div class="step-section">
     <div class="step-section-header">
       <div class="section-icon">🛠️</div>
-      <h2>Para Te Ajudar</h2>
+      <h2>Ferramentas para o Caminho</h2>
     </div>
     <div class="step-section-content">
       <p class="ferramentas-intro">Ferramentas que podem apoiar sua caminhada:</p>
@@ -190,6 +190,23 @@ function renderAprofunde(passo) {
 }
 
 function renderPratique(passo) {
+  if (passo.pratique.convite) {
+    return `<div class="step-section">
+    <div class="step-section-header">
+      <div class="section-icon">🎯</div>
+      <h2>Pratique</h2>
+    </div>
+    <div class="step-section-content">
+      <div class="pratique-convite">
+        <p>${escapeHtml(passo.pratique.convite)}</p>
+      </div>
+      ${passo.pratique.pergunta ? `<div class="pratique-pergunta">
+        <strong>Pergunta da semana:</strong>
+        <p>${escapeHtml(passo.pratique.pergunta)}</p>
+      </div>` : ''}
+    </div>
+  </div>`;
+  }
   return `<div class="step-section">
     <div class="step-section-header">
       <div class="section-icon">🎯</div>
