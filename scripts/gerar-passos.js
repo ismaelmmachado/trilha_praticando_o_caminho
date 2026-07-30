@@ -190,18 +190,19 @@ function renderAprofunde(passo) {
 }
 
 function renderPratique(passo) {
-  if (passo.pratique.convite) {
+  if (passo.pratique.experimento) {
     return `<div class="step-section">
     <div class="step-section-header">
       <div class="section-icon">🎯</div>
       <h2>Pratique</h2>
     </div>
     <div class="step-section-content">
-      <div class="pratique-convite">
-        <p>${escapeHtml(passo.pratique.convite)}</p>
+      <div class="pratique-experimento">
+        <strong class="pratique-label">Praticar</strong>
+        <p>${escapeHtml(passo.pratique.experimento)}</p>
       </div>
       ${passo.pratique.pergunta ? `<div class="pratique-pergunta">
-        <strong>Pergunta da semana:</strong>
+        <strong>Pergunta da semana</strong>
         <p>${escapeHtml(passo.pratique.pergunta)}</p>
       </div>` : ''}
     </div>

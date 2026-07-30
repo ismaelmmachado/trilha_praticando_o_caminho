@@ -976,7 +976,7 @@ ul { list-style: none; }
   font-style: italic;
 }
 
-.pratique-convite {
+.pratique-experimento {
   font-size: 1.05rem;
   line-height: 1.7;
   color: var(--color-text);
@@ -985,6 +985,20 @@ ul { list-style: none; }
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   margin-bottom: var(--space-md);
+}
+
+.pratique-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.pratique-experimento p {
+  margin: 0;
 }
 
 .pratique-pergunta {
