@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (i === 0) renderTransicao(homeContainer);
       });
     }).catch(err => {
-      homeContainer.innerHTML = `<p style="color:var(--color-muted);text-align:center;padding:2rem;">${err.message}</p>`;
+      homeContainer.innerHTML = `<p class="error-message">${err.message}</p>`;
     });
   }
 });

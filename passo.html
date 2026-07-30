@@ -6,6 +6,12 @@
   <title>Redirecionando... · Praticando o Caminho</title>
 </head>
 <body>
+  <noscript>
+    <p style="text-align:center;padding:2rem;font-family:sans-serif;">
+      Seu navegador não suporta JavaScript.
+      <a href="passo-1.html">Acessar Passo 1</a>
+    </p>
+  </noscript>
   <script>
     const id = new URLSearchParams(window.location.search).get('id');
     if (id) window.location.replace('passo-' + id + '.html');

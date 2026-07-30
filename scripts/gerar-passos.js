@@ -7,19 +7,21 @@ const passos = dados.passos;
 function renderParaComecar(passo) {
   if (passo.para_comecar) {
     const resumoHtml = escapeHtml(passo.para_comecar.resumo).replace(/\n/g, '<br>');
-    const pdfUrl = escapeHtml(passo.para_comecar.apostila_pdf || '#');
+    const pdfUrl = passo.para_comecar.apostila_pdf && passo.para_comecar.apostila_pdf !== '#' ? escapeHtml(passo.para_comecar.apostila_pdf) : null;
     return `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">📖</div>
+      <div class="section-icon" aria-hidden="true">📖</div>
       <h2>Para Começar</h2>
     </div>
     <div class="step-section-content">
       <p>${resumoHtml}</p>
       <div class="para-comecar-footer">
-        <a href="${pdfUrl}" class="download-btn" target="_blank" download>
-          <span class="download-icon">↓</span>
+        ${pdfUrl
+          ? `<a href="${pdfUrl}" class="download-btn" target="_blank" download>
+          <span class="download-icon" aria-hidden="true">↓</span>
           Baixar Apostila em PDF
-        </a>
+        </a>`
+          : `<span class="download-btn is-empty">Em breve</span>`}
       </div>
     </div>
   </div>`;
@@ -30,7 +32,7 @@ function renderParaComecar(passo) {
 function renderParaTeAjudar() {
   return `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">🛠️</div>
+      <div class="section-icon" aria-hidden="true">🛠️</div>
       <h2>Ferramentas para o Caminho</h2>
     </div>
     <div class="step-section-content">
@@ -38,7 +40,7 @@ function renderParaTeAjudar() {
       <div class="ferramentas-list">
         <div class="ferramenta-item">
           <div class="ferramenta-item-content">
-            <span class="ferramenta-icon">📖</span>
+            <span class="ferramenta-icon" aria-hidden="true">📖</span>
             <div class="ferramenta-info">
               <strong>Bible App (YouVersion)</strong>
               <span>A Bíblia no seu bolso. Siga a Comunidade Vitral.</span>
@@ -48,7 +50,7 @@ function renderParaTeAjudar() {
         </div>
         <div class="ferramenta-item">
           <div class="ferramenta-item-content">
-            <span class="ferramenta-icon">🙏</span>
+            <span class="ferramenta-icon" aria-hidden="true">🙏</span>
             <div class="ferramenta-info">
               <strong>Lectio 365</strong>
               <span>Devocional diário em português. Ore com a Bíblia.</span>
@@ -58,7 +60,7 @@ function renderParaTeAjudar() {
         </div>
         <div class="ferramenta-item">
           <div class="ferramenta-item-content">
-            <span class="ferramenta-icon">🎙️</span>
+            <span class="ferramenta-icon" aria-hidden="true">🎙️</span>
             <div class="ferramenta-info">
               <strong>Vitral no Spotify</strong>
               <span>Podcast da Comunidade Vitral para sua jornada.</span>
@@ -74,7 +76,7 @@ function renderParaTeAjudar() {
 function renderMedite(passo) {
   return `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">📖</div>
+      <div class="section-icon" aria-hidden="true">📖</div>
       <h2>Medite</h2>
     </div>
     <div class="step-section-content">
@@ -91,7 +93,7 @@ function renderOuca(passo) {
       : '<p style="color:var(--color-muted);padding:2rem;text-align:center;">Em breve</p>';
     return `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">🎧</div>
+      <div class="section-icon" aria-hidden="true">🎧</div>
       <h2>Ouça: ${escapeHtml(passo.ouca.titulo)}</h2>
     </div>
     <div class="step-section-content">
@@ -108,7 +110,7 @@ function renderAssista(passo) {
     : '<p style="color:var(--color-muted);padding:2rem;text-align:center;">Vídeo em breve</p>';
   return `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">🎬</div>
+      <div class="section-icon" aria-hidden="true">🎬</div>
       <h2>Assista: ${escapeHtml(passo.assista.titulo)}</h2>
     </div>
     <div class="step-section-content">
@@ -125,7 +127,7 @@ function renderAprofunde(passo) {
       if (item && item.titulo) {
         return `<div class="aprofunde-item">
           <div class="aprofunde-item-content">
-            <span class="aprofunde-item-icon">${icone}</span>
+            <span class="aprofunde-item-icon" aria-hidden="true">${icone}</span>
             <div class="aprofunde-item-info">
               <strong>${escapeHtml(item.titulo)}</strong>
               <span>${item.autor || item.artista ? escapeHtml(item.autor || item.artista) + ' · ' : ''}${label}</span>
@@ -136,7 +138,7 @@ function renderAprofunde(passo) {
       }
       return `<div class="aprofunde-item">
         <div class="aprofunde-item-content">
-          <span class="aprofunde-item-icon">${icone}</span>
+          <span class="aprofunde-item-icon" aria-hidden="true">${icone}</span>
           <div class="aprofunde-item-info">
             <strong>${label}</strong>
             <span>Em breve</span>
@@ -147,7 +149,7 @@ function renderAprofunde(passo) {
     };
     return `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">📚</div>
+      <div class="section-icon" aria-hidden="true">📚</div>
       <h2>Aprofunde</h2>
     </div>
     <div class="step-section-content">
@@ -161,7 +163,7 @@ function renderAprofunde(passo) {
   if (!passo.aprofunde || passo.aprofunde.length === 0 || !Array.isArray(passo.aprofunde)) {
     return `<div class="step-section">
       <div class="step-section-header">
-        <div class="section-icon">📚</div>
+        <div class="section-icon" aria-hidden="true">📚</div>
         <h2>Aprofunde</h2>
       </div>
       <div class="step-section-content">
@@ -171,7 +173,7 @@ function renderAprofunde(passo) {
   }
   let html = `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">📚</div>
+      <div class="section-icon" aria-hidden="true">📚</div>
       <h2>Aprofunde</h2>
     </div>
     <div class="step-section-content">
@@ -193,7 +195,7 @@ function renderPratique(passo) {
   if (passo.pratique.experimento) {
     return `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">🎯</div>
+      <div class="section-icon" aria-hidden="true">🎯</div>
       <h2>Pratique</h2>
     </div>
     <div class="step-section-content">
@@ -210,7 +212,7 @@ function renderPratique(passo) {
   }
   return `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">🎯</div>
+      <div class="section-icon" aria-hidden="true">🎯</div>
       <h2>Pratique</h2>
     </div>
     <div class="step-section-content">
@@ -224,7 +226,7 @@ function renderOrganizese(passo) {
   if (passo.organizese.dias && passo.organizese.dias.some(d => d.dia.includes('feira') || d.dia === 'Sábado' || d.dia === 'Domingo')) {
     let html = `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">📋</div>
+      <div class="section-icon" aria-hidden="true">📋</div>
       <h2>Organize-se</h2>
     </div>
     <div class="step-section-content">
@@ -241,7 +243,7 @@ function renderOrganizese(passo) {
   }
   let html = `<div class="step-section">
     <div class="step-section-header">
-      <div class="section-icon">📋</div>
+      <div class="section-icon" aria-hidden="true">📋</div>
       <h2>Organize-se</h2>
     </div>
     <div class="step-section-content">
@@ -360,6 +362,7 @@ function gerarPagina(passo, todosPassos) {
       <div class="page-header">
         <div class="step-meta">
           <span class="etapa-badge">Etapa ${passo.etapa} · Passo ${passo.id}</span>
+          <span class="step-counter">Passo ${passo.id} de ${todosPassos.length}</span>
         </div>
         <h1>${escapeHtml(passo.titulo)}</h1>
         <p class="step-subtitle">${escapeHtml(passo.subtitulo)}</p>
@@ -375,6 +378,7 @@ function gerarPagina(passo, todosPassos) {
     <div class="container footer-inner">
       <strong>Praticando o Caminho</strong>
       <p>Comunidade Vitral · Uma jornada de discipulado</p>
+      <a href="#" class="back-to-top" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
     </div>
   </footer>
 </body>
