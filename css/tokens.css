@@ -9,24 +9,13 @@
   --color-text: #1C1917;
   --color-muted: #78716C;
   --color-border: rgba(28, 25, 23, 0.08);
-  --color-ring: rgba(28, 25, 23, 0.2);
-
-  --color-primary: #1C1917;
-  --color-on-primary: #FFFFFF;
-
-  --color-destructive: #DC2626;
-  --color-on-destructive: #FFFFFF;
 
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
-  --radius-xl: 24px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
-  --shadow-xl: 0 16px 40px rgba(0, 0, 0, 0.10);
 
   --space-xs: 4px;
   --space-sm: 8px;

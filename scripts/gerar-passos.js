@@ -378,7 +378,7 @@ function gerarPagina(passo, todosPassos) {
     <div class="container footer-inner">
       <strong>Praticando o Caminho</strong>
       <p>Comunidade Vitral · Uma jornada de discipulado</p>
-      <a href="#" class="back-to-top" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
+      <a href="#main" class="back-to-top" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
     </div>
   </footer>
 </body>
