@@ -130,26 +130,70 @@
         "titulo": "A Formação Que Começa Em Deus",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és o Oleiro, eu sou o barro. Reconheço que tenho sido formado por muitas forças que não escolhi — e algumas delas me afastaram de Ti.\nHoje, escolho cooperar contigo. Quero ser formado por Ti. Quero que os meus hábitos, relacionamentos, histórias, ambiente, tempo e experiências sejam moldados pela Tua presença.\nAjuda-me a criar espaço para a Tua transformação. Dá-me paciência para o processo e confiança para esperar no Teu tempo.\nQue eu não me contente em saber sobre Ti — que eu me torne como Ti.\nAmém."
+        "instrucoes": "Senhor,\nTu és o Oleiro, eu sou o barro. Reconheço que tenho sido formado por muitas forças que não escolhi — e algumas delas me afastaram de Ti.\nHoje, escolho cooperar contigo. Quero ser formado por Ti. Quero que os meus hábitos, relacionamentos, histórias, ambiente, tempo e experiências sejam moldados pela Tua presença.\nAjuda-me a criar espaço para a Tua transformação. Dá-me paciência para o processo e confiança para esperar no Teu tempo.\nQue eu não me contente em saber sobre Ti — que eu me torne como Ti.\nAmém.",
+        "experimento": "Se você puder fazer uma coisa esta semana, que tal escolher UMA das seis forças que nos formam (hábitos, relacionamentos, histórias, ambiente, tempo, experiências) e observar como ela está te moldando? Só observe. Não precisa mudar nada ainda.",
+        "pergunta": "Quem está te formando? — A pergunta não é se você está sendo formado, mas por quem e para quê."
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Identifique uma força que está te formando.\nEsta semana, escolha UMA das seis forças (hábitos, relacionamentos, histórias, ambiente, tempo, experiências) e observe como ela está te formando.\nPode ser:\nUm hábito que você quer começar ou parar\nUm relacionamento que precisa de mais atenção\nUma história que você precisa recontar\nUma mudança no seu ambiente\nUm novo ritmo de tempo\nUma experiência que você quer processar com Deus\nEscreva aqui o que você observou e o que você quer mudar:\n\"A formação espiritual não começa com esforço — começa com consciência.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Agora damos o segundo passo. Vamos falar sobre formação. Pode ser que você nunca tenha pensado sobre isso, mas a verdade é que todos nós estamos sendo formados o tempo todo — pela cultura, pelo trabalho, pelas redes sociais, pelos hábitos. A pergunta não é se você está sendo formado. A pergunta é: por quem e para quê?",
+        "apostila_pdf": "/apostilas/passo-2.pdf"
+      },
+      "ouca": {
+        "titulo": "A Formação Que Começa Em Deus",
+        "spotify_url": ""
       }
     },
     {
@@ -167,26 +211,70 @@
         "titulo": "O Caminho Da Transformação",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és o Caminho. Não apenas o destino. Tu me ensinaste a andar, a praticar, a crescer.\nPerdoa-me pelas vezes em que tentei mudar sozinho, com força de vontade ou com conhecimento, sem cooperar contigo.\nAjuda-me a praticar os Teus caminhos. Dá-me paciência para o processo. Dá-me perseverança para continuar, mesmo quando não vejo resultado.\nQue eu não me contente em saber o caminho — que eu ande nele.\nAmém."
+        "instrucoes": "Senhor,\nTu és o Caminho. Não apenas o destino. Tu me ensinaste a andar, a praticar, a crescer.\nPerdoa-me pelas vezes em que tentei mudar sozinho, com força de vontade ou com conhecimento, sem cooperar contigo.\nAjuda-me a praticar os Teus caminhos. Dá-me paciência para o processo. Dá-me perseverança para continuar, mesmo quando não vejo resultado.\nQue eu não me contente em saber o caminho — que eu ande nele.\nAmém.",
+        "experimento": "Se você puder fazer uma coisa esta semana, que tal repetir um pequeno gesto todos os dias? Pode ser sorrir para alguém, respirar fundo antes de responder, ou agradecer uma vez por dia. Uma prática simples, sem meta.",
+        "pergunta": "Você está esperando um atalho ou disposto a caminhar? — A transformação não é um evento, é um processo."
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique um caminho de Jesus.\nEsta semana, escolha UMA prática simples que você quer começar a incorporar na sua rotina. Pode ser:\n5 minutos de oração pela manhã\nUma pausa para agradecer antes das refeições\nUm gesto de generosidade por dia\nUm momento de silêncio antes de dormir\nEscreva aqui o que você vai praticar:\n\"A transformação não acontece por esforço — acontece por prática.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "A transformação acontece pela prática — não por esforço isolado, apenas estudo ou esperar um milagre. Jesus não nos deu apenas um destino. Ele nos deu um caminho. E esse caminho pode ser aprendido, praticado e vivido, um passo de cada vez.",
+        "apostila_pdf": "/apostilas/passo-3.pdf"
+      },
+      "ouca": {
+        "titulo": "O Caminho Da Transformação",
+        "spotify_url": ""
       }
     },
     {
@@ -204,26 +292,70 @@
         "titulo": "As Práticas Que Nos Formam",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és o Caminho. E Tu nos deste práticas que nos ajudam a andar nesse caminho.\nAjuda-me a ver as práticas não como regras, mas como presentes. Não como peso, mas como alívio. Não como tarefas, mas como ritmos de graça.\nDá-me sabedoria para escolher por onde começar. Dá-me perseverança para continuar. Dá-me paciência para esperar o fruto.\nQue as minhas práticas não sejam para impressionar os outros, mas para abrir espaço para Ti.\nAmém."
+        "instrucoes": "Senhor,\nTu és o Caminho. E Tu nos deste práticas que nos ajudam a andar nesse caminho.\nAjuda-me a ver as práticas não como regras, mas como presentes. Não como peso, mas como alívio. Não como tarefas, mas como ritmos de graça.\nDá-me sabedoria para escolher por onde começar. Dá-me perseverança para continuar. Dá-me paciência para esperar o fruto.\nQue as minhas práticas não sejam para impressionar os outros, mas para abrir espaço para Ti.\nAmém.",
+        "experimento": "Escolha UMA das nove práticas para experimentar esta semana. Pode ser 5 minutos de silêncio, uma refeição sem celular, ou agradecer antes de dormir. Só uma prática. Sem pressão. Sem meta.",
+        "pergunta": "Qual prática poderia abrir espaço para Deus na sua rotina esta semana?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Escolha uma prática para começar.\nEsta semana, escolha UMA das nove práticas e comece a praticá-la. Pode ser:\n10 minutos de silêncio por dia\nUma refeição sem celular\nUm gesto de generosidade por dia\nUm dia de descanso (ou parte de um dia)\nEscreva aqui qual prática você vai começar:\n\"As práticas não são sobre fazer mais — são sobre abrir espaço para Deus.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Quais são as práticas que nos formam? Ao longo da história, os seguidores de Jesus descobriram práticas que abrem espaço para Deus agir. Não são tarefas para cumprir, mas ritmos que nos ajudam a estar com Jesus, tornar-nos como Ele e fazer como Ele fez.",
+        "apostila_pdf": "/apostilas/passo-4.pdf"
+      },
+      "ouca": {
+        "titulo": "As Práticas Que Nos Formam",
+        "spotify_url": ""
       }
     },
     {
@@ -241,26 +373,70 @@
         "titulo": "Dor E Sofrimento",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu não és estranho à dor. O Teu Filho sentiu uma tristeza mortal, derramou lágrimas e clamou a Ti no jardim. Ele não fugiu da dor — ele a enfrentou e a ofereceu.\nPerdoa-me pelas vezes em que neguei minha dor, me desconectei dela ou a anestesiei com distrações. Ajuda-me a trazer a Ti aquilo que estou sentindo — sem medo, sem vergonha, sem filtros.\nDá-me coragem para sentir. Dá-me palavras para nomear. E, acima de tudo, dá-me a confiança para entregar o que está no meu coração, dizendo: \"Não seja como eu quero, mas como tu queres.\"\nAmém."
+        "instrucoes": "Senhor,\nTu não és estranho à dor. O Teu Filho sentiu uma tristeza mortal, derramou lágrimas e clamou a Ti no jardim. Ele não fugiu da dor — ele a enfrentou e a ofereceu.\nPerdoa-me pelas vezes em que neguei minha dor, me desconectei dela ou a anestesiei com distrações. Ajuda-me a trazer a Ti aquilo que estou sentindo — sem medo, sem vergonha, sem filtros.\nDá-me coragem para sentir. Dá-me palavras para nomear. E, acima de tudo, dá-me a confiança para entregar o que está no meu coração, dizendo: \"Não seja como eu quero, mas como tu queres.\"\nAmém.",
+        "experimento": "Esta semana, reserve um momento para parar e perguntar a si mesmo: 'O que estou sentindo agora?' Depois, ofereça esse sentimento a Deus. Pode ser só: 'Senhor, isso aqui.' Não precisa de palavras bonitas.",
+        "pergunta": "O que você tem escondido de Deus que Ele já conhece?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique \"notar e nomear\" suas emoções diante de Deus.\nEscolha um momento tranquilo do dia, faça uma pausa e use o passo a passo:\nObserve: o que está presente em você?\nNomeie: dê nome ao sentimento.\nSinta: fique com ele por um momento.\nOfereça: entregue-o a Deus em oração.\nNão precisa ser longo. Apenas alguns minutos, todos os dias. E lembre-se: não há sentimento certo ou errado para trazer a Deus. Ele já sabe o que está no seu coração. Ele só está esperando você confiar o suficiente para dizer em voz alta.\n\"A dor não é o fim do caminho. Ela pode ser o lugar onde Deus mais se aproxima.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Chegamos a um dos encontros mais delicados e transformadores da nossa jornada. Jesus foi claro: 'No mundo vocês terão aflições'. Ele não prometeu uma vida sem dor, mas prometeu que não estaríamos sozinhos nela. Este encontro não vai explicar por que coisas ruins acontecem, mas vai te convidar a encarar a dor de uma forma diferente.",
+        "apostila_pdf": "/apostilas/passo-5.pdf"
+      },
+      "ouca": {
+        "titulo": "Dor E Sofrimento",
+        "spotify_url": ""
       }
     },
     {
@@ -278,26 +454,70 @@
         "titulo": "Cura Do Pecado",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és o Deus que sara. Tu não te afastas dos quebrados — Tu te aproximas.\nEu confesso que muitas vezes errei o alvo. Que pequei contra Ti, contra os outros e contra mim mesmo. Mas também reconheço que fui ferido, e que carrego marcas que não escolhi.\nHoje, trago à Tua luz tudo o que estava escondido. Não para ser julgado, mas para ser curado.\nAjuda-me a receber o Teu perdão. Ajuda-me a perdoar a mim mesmo. E, se for necessário, ajuda-me a buscar reconciliação com aqueles que feri.\nQue a Tua graça seja maior que a minha culpa. Que a Tua cura seja mais profunda que a minha vergonha.\nAmém."
+        "instrucoes": "Senhor,\nTu és o Deus que sara. Tu não te afastas dos quebrados — Tu te aproximas.\nEu confesso que muitas vezes errei o alvo. Que pequei contra Ti, contra os outros e contra mim mesmo. Mas também reconheço que fui ferido, e que carrego marcas que não escolhi.\nHoje, trago à Tua luz tudo o que estava escondido. Não para ser julgado, mas para ser curado.\nAjuda-me a receber o Teu perdão. Ajuda-me a perdoar a mim mesmo. E, se for necessário, ajuda-me a buscar reconciliação com aqueles que feri.\nQue a Tua graça seja maior que a minha culpa. Que a Tua cura seja mais profunda que a minha vergonha.\nAmém.",
+        "experimento": "Escolha uma coisa pequena que você tem carregado e fale sobre ela com Deus. Se sentir segurança e tiver uma pessoa de confiança, compartilhe com ela também. Não precisa ser grande. Apenas traga à luz.",
+        "pergunta": "O que você precisa trazer à luz para ser curado?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique a confissão.\nEsta semana, reserve um momento para:\nConfessar a Deus: Fale com Ele sobre o que você tem carregado — seja pecado cometido, sofrido ou herdado. Seja específico. Seja honesto.\nConfessar a uma pessoa de confiança: Se você tem uma luta ou um peso que carrega sozinho, considere compartilhar com alguém que vai te acolher. Pode ser um amigo, um mentor, um líder do PG ou um pastor.\nReceber a graça: Depois de confessar, pratique receber o perdão de Deus. Faça uma oração de gratidão. Agradeça porque não há condenação para os que estão em Cristo.\n\"A confissão não é sobre se expor — é sobre se libertar.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Vamos falar sobre algo que muitas vezes está na raiz da nossa dor: o pecado. Essa palavra pode soar pesada, mas a Bíblia a usa de um jeito diferente. Pecado não é só fazer algo errado — é viver desconectado de Deus. E, como toda doença, o pecado precisa de cura. Este encontro não é para te fazer sentir culpado, mas para te ajudar a encontrar liberdade.",
+        "apostila_pdf": "/apostilas/passo-6.pdf"
+      },
+      "ouca": {
+        "titulo": "Cura Do Pecado",
+        "spotify_url": ""
       }
     },
     {
@@ -315,26 +535,70 @@
         "titulo": "Minha Regra De Vida",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nChego ao fim desta etapa da jornada com um coração grato. Grato pelo que aprendi sobre Ti, sobre mim e sobre o caminho de seguir-Te.\nAgora, peço que me ajudes a criar um ritmo que sustente essa caminhada. Dá-me sabedoria para escolher as práticas certas. Dá-me disciplina para perseverar. Dá-me graça para recomeçar quando eu falhar.\nQue esta Regra de Vida não seja uma prisão, mas uma treliça — que sustente a minha vida em Ti e me ajude a dar frutos.\nAmém."
+        "instrucoes": "Senhor,\nChego ao fim desta etapa da jornada com um coração grato. Grato pelo que aprendi sobre Ti, sobre mim e sobre o caminho de seguir-Te.\nAgora, peço que me ajudes a criar um ritmo que sustente essa caminhada. Dá-me sabedoria para escolher as práticas certas. Dá-me disciplina para perseverar. Dá-me graça para recomeçar quando eu falhar.\nQue esta Regra de Vida não seja uma prisão, mas uma treliça — que sustente a minha vida em Ti e me ajude a dar frutos.\nAmém.",
+        "experimento": "Pegue um papel e escreva de 2 a 3 práticas que você quer manter na sua rotina. Só um esboço. Coloque num lugar onde você veja todos os dias.",
+        "pergunta": "Se a sua rotina atual continuar por mais um ano, onde você vai estar?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Esboce sua Regra de Vida.\nEsta semana, comece a esboçar sua Regra de Vida. Escolha 2 a 3 práticas que você quer começar a incluir na sua rotina.\nPode ser:\n10 minutos de oração pela manhã\nUm dia de descanso por semana\nUma leitura bíblica diária\nUm café com um amigo para compartilhar a vida\nUm gesto de generosidade por dia\nEscreva aqui o que você vai começar a praticar:\n\"A jornada espiritual não é sobre perfeição — é sobre recomeçar.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Chegamos ao passo final da Etapa 1 da nossa jornada. Você percorreu um caminho — desde o convite para ser aprendiz até enfrentar a dor e trazer o pecado à luz. Agora, vamos criar sua Regra de Vida. Não é um conjunto de regras, mas uma estrutura que sustenta sua caminhada com Jesus.",
+        "apostila_pdf": "/apostilas/passo-7.pdf"
+      },
+      "ouca": {
+        "titulo": "Minha Regra De Vida",
+        "spotify_url": ""
       }
     },
     {
@@ -352,26 +616,70 @@
         "titulo": "Vida Em Comunidade",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu não me criaste para andar sozinho. Tu me chamaste para fazer parte de uma família — uma família imperfeita, mas que caminha em direção a Ti.\nAjuda-me a encontrar minha comunidade. Ajuda-me a ser alguém que se abre, que confia, que caminha junto. Ajuda-me a criar espaço para que outros também sejam conhecidos e amados.\nQue eu não me contente com relacionamentos superficiais. Que eu busque profundidade, vulnerabilidade e compromisso com a transformação.\nE que, ao final, eu possa dizer: \"Eu não caminhei sozinho. Eu caminhei com outros — e isso me fez mais parecido com Jesus.\"\nAmém."
+        "instrucoes": "Senhor,\nTu não me criaste para andar sozinho. Tu me chamaste para fazer parte de uma família — uma família imperfeita, mas que caminha em direção a Ti.\nAjuda-me a encontrar minha comunidade. Ajuda-me a ser alguém que se abre, que confia, que caminha junto. Ajuda-me a criar espaço para que outros também sejam conhecidos e amados.\nQue eu não me contente com relacionamentos superficiais. Que eu busque profundidade, vulnerabilidade e compromisso com a transformação.\nE que, ao final, eu possa dizer: \"Eu não caminhei sozinho. Eu caminhei com outros — e isso me fez mais parecido com Jesus.\"\nAmém.",
+        "experimento": "Identifique uma pessoa com quem você pode ser mais aberto esta semana. Convide para um café, uma caminhada, uma conversa. Não precisa ser sobre algo profundo. Apenas comece.",
+        "pergunta": "Quem te conhece de verdade além de Deus?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Dê o primeiro passo para encontrar sua comunidade intencional.\nEsta semana, identifique uma ou duas pessoas (ou um grupo) com quem você pode começar a caminhar com mais intencionalidade. Pode ser:\nAlguém do seu Pequeno Grupo\nUm amigo que também quer crescer na fé\nUm colega de trabalho que está na mesma jornada\nAlguém que você admira e que pode ser um mentor\nConvide essa pessoa para um café, uma refeição ou um encontro. Não precisa ser complicado. Apenas comece.\n\"Você não pode seguir Jesus sozinho. A comunidade é o lugar onde a transformação acontece.\"\nFim da Etapa 1\nPróxima Etapa: As 9 Práticas (Passos 9 a 17)",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Chegamos ao último passo da Etapa 1. E, de certa forma, ao mais importante. Você não foi feito para fazer isso sozinho. A fé cristã nunca foi uma jornada solitária. Desde o início, Jesus chamou um grupo de pessoas para caminharem juntas. Este encontro é sobre viver a fé em comunidade — o ambiente onde a transformação acontece.",
+        "apostila_pdf": "/apostilas/passo-8.pdf"
+      },
+      "ouca": {
+        "titulo": "Vida Em Comunidade",
+        "spotify_url": ""
       }
     },
     {
@@ -389,26 +697,70 @@
         "titulo": "O Descanso Como Ritmo De Graça",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu me criaste para viver em ritmo — não em correria. Mas eu me deixei levar pela pressa, pelo excesso, pela ilusão de que tudo depende de mim.\nPerdoa-me. Ajuda-me a parar. Ajuda-me a descansar. Ajuda-me a confiar que o mundo continua sem mim.\nEnsina-me o ritmo do sábado — não como uma regra, mas como um presente. Que eu aprenda a descansar em Ti, não apenas um dia por semana, mas como um estilo de vida.\nAmém."
+        "instrucoes": "Senhor,\nTu me criaste para viver em ritmo — não em correria. Mas eu me deixei levar pela pressa, pelo excesso, pela ilusão de que tudo depende de mim.\nPerdoa-me. Ajuda-me a parar. Ajuda-me a descansar. Ajuda-me a confiar que o mundo continua sem mim.\nEnsina-me o ritmo do sábado — não como uma regra, mas como um presente. Que eu aprenda a descansar em Ti, não apenas um dia por semana, mas como um estilo de vida.\nAmém.",
+        "experimento": "Reserve um período — algumas horas ou meio dia — para descansar de verdade. Desligue notificações. Pare de trabalhar. Não faça lista de tarefas. Apenas esteja.",
+        "pergunta": "O que você perderia se desacelerasse por um dia?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique o descanso.\nEsta semana, reserve um período de descanso — pode ser algumas horas ou um dia inteiro. Durante esse tempo:\nDesligue as telas\nPare de trabalhar\nNão faça lista de tarefas\nSimplesmente esteja\nNão precisa fazer nada especial. Apenas descanse.\n\"O descanso não é um prêmio — é um ritmo.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Você concluiu a Etapa 1 e agora começamos a Etapa 2 — o aprofundamento em cada uma das 9 práticas. E começamos com a prática que, para muitos, é a mais difícil de todas: o descanso. Vivemos em um mundo que valoriza a produtividade, mas Jesus nos convida a um ritmo que inclui pausa, silêncio, descanso.",
+        "apostila_pdf": "/apostilas/passo-9.pdf"
+      },
+      "ouca": {
+        "titulo": "O Descanso Como Ritmo De Graça",
+        "spotify_url": ""
       }
     },
     {
@@ -426,26 +778,70 @@
         "titulo": "O Ritmo Da Oração",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nObrigado porque não preciso de palavras bonitas para falar contigo. Obrigado porque Tu me entendes até no meu silêncio, no meu suspiro, no meu cansaço.\nAjuda-me a descobrir meu jeito de orar. Livra-me da culpa de não fazer do jeito dos outros. Dá-me liberdade para falar contigo como quem conversa com um amigo.\nE que, no meio da correria, eu aprenda a te encontrar — no trânsito, na fila, no café.\nAmém."
+        "instrucoes": "Senhor,\nObrigado porque não preciso de palavras bonitas para falar contigo. Obrigado porque Tu me entendes até no meu silêncio, no meu suspiro, no meu cansaço.\nAjuda-me a descobrir meu jeito de orar. Livra-me da culpa de não fazer do jeito dos outros. Dá-me liberdade para falar contigo como quem conversa com um amigo.\nE que, no meio da correria, eu aprenda a te encontrar — no trânsito, na fila, no café.\nAmém.",
+        "experimento": "Escolha UM momento do dia — ao acordar, no almoço ou antes de dormir — e ore com uma frase curta: 'Senhor, obrigado por este dia' ou 'Jesus, ajuda-me hoje.' Só isso. Um minuto. Sem culpa.",
+        "pergunta": "Como seria sua vida se orar fosse tão natural quanto respirar?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Crie seu ritmo de oração.\nEsta semana, escolha UM momento do dia para orar (ao acordar, no almoço, antes de dormir) e ore usando apenas uma frase curta.\nPode ser:\n\"Obrigado, Senhor, por este dia.\"\n\"Senhor, ajuda-me hoje.\"\n\"Tu és bom, Deus fiel.\"\n\"Cuida da minha família.\"\nNão precisa ser longo. Apenas 1-2 minutos, todos os dias.\n\"A recompensa de seguir Jesus é Jesus.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "A oração é uma das práticas mais centrais e, ao mesmo tempo, mais desafiadoras. Pode ser que você ore há anos ou que nunca tenha conseguido manter uma rotina. A boa notícia é que oração não é sobre fazer do jeito certo. É sobre conversar. E conversa cabe em qualquer lugar.",
+        "apostila_pdf": "/apostilas/passo-10.pdf"
+      },
+      "ouca": {
+        "titulo": "O Ritmo Da Oração",
+        "spotify_url": ""
       }
     },
     {
@@ -463,26 +859,70 @@
         "titulo": "O Jejum Como Espaço Para Deus",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és a fonte de toda vida. Tu és maior que minha fome, minha sede, minhas distrações, meus confortos.\nAjuda-me a entender o jejum não como uma obrigação, mas como um convite — um convite para criar espaço para Ti.\nMostra-me o que eu preciso deixar de lado para me concentrar em Ti. Dá-me coragem para abrir mão do que me distrai. E enche o vazio que eu criar com a Tua presença.\nQue o meu jejum não seja para impressionar ninguém — nem a mim mesmo — mas para me aproximar de Ti.\nAmém."
+        "instrucoes": "Senhor,\nTu és a fonte de toda vida. Tu és maior que minha fome, minha sede, minhas distrações, meus confortos.\nAjuda-me a entender o jejum não como uma obrigação, mas como um convite — um convite para criar espaço para Ti.\nMostra-me o que eu preciso deixar de lado para me concentrar em Ti. Dá-me coragem para abrir mão do que me distrai. E enche o vazio que eu criar com a Tua presença.\nQue o meu jejum não seja para impressionar ninguém — nem a mim mesmo — mas para me aproximar de Ti.\nAmém.",
+        "experimento": "Escolha pular uma refeição esta semana e use aquele tempo para orar. Ou, se preferir, fique um dia sem redes sociais. Não é sobre sofrer — é sobre perceber o espaço que Deus quer ocupar.",
+        "pergunta": "O que está ocupando o espaço que poderia ser de Deus na sua vida?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique um jejum simples.\nEsta semana, escolha UMA forma de jejum e pratique:\nJejum de uma refeição: Pule uma refeição e use o tempo para orar\nJejum de mídias: Fique um dia sem redes sociais ou telas\nJejum de conforto: Abra mão de algo que você gosta (café, chocolate, compras) por um dia\nLembre-se: O jejum não é sobre sofrer — é sobre criar espaço. Quando você sentir falta do que deixou de lado, use isso como um lembrete para se voltar para Deus.\n\"O jejum não é sobre o que você perde — é sobre o que você encontra.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Chegamos a uma prática que, para muitos, é a mais desconhecida: o jejum. Jejuar não é sobre punir o corpo ou merecer algo de Deus. Jejum é criar espaço — abrir mão de um apetite legítimo para dizer que Deus é maior que nossa fome imediata.",
+        "apostila_pdf": "/apostilas/passo-11.pdf"
+      },
+      "ouca": {
+        "titulo": "O Jejum Como Espaço Para Deus",
+        "spotify_url": ""
       }
     },
     {
@@ -500,26 +940,70 @@
         "titulo": "O Silêncio Como Espaço Sagrado",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és o Deus que fala no silêncio. Tu és a presença que preenche o vazio. Perdoa-me por preencher minha vida com tanto barulho que não consigo ouvir Tua voz.\nAjuda-me a encontrar espaço para o silêncio. Ajuda-me a desacelerar. Ajuda-me a parar de fugir de mim mesmo e de Ti.\nEnsina-me a aquietar minha alma. Ensina-me a descansar na Tua presença. Ensina-me a ouvir, mesmo quando não há palavras.\nQue o silêncio não seja um vazio para mim, mas um espaço sagrado onde eu possa Te encontrar.\nAmém."
+        "instrucoes": "Senhor,\nTu és o Deus que fala no silêncio. Tu és a presença que preenche o vazio. Perdoa-me por preencher minha vida com tanto barulho que não consigo ouvir Tua voz.\nAjuda-me a encontrar espaço para o silêncio. Ajuda-me a desacelerar. Ajuda-me a parar de fugir de mim mesmo e de Ti.\nEnsina-me a aquietar minha alma. Ensina-me a descansar na Tua presença. Ensina-me a ouvir, mesmo quando não há palavras.\nQue o silêncio não seja um vazio para mim, mas um espaço sagrado onde eu possa Te encontrar.\nAmém.",
+        "experimento": "Reserve 5 minutos por dia para ficar em silêncio. Sente-se. Respire. Não ore com palavras. Apenas esteja na presença de Deus. Quando sua mente vagar, volte. Gentilmente.",
+        "pergunta": "O que você evita ouvir quando fica em silêncio?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique 5 minutos de silêncio por dia.\nEsta semana, reserve 5 minutos por dia para praticar o silêncio. Pode ser:\nAo acordar, antes de pegar o celular\nNo carro, antes de entrar no trabalho\nEm uma pausa durante o dia\nAntes de dormir\nSente-se em silêncio. Respire. Não tente orar com palavras. Apenas esteja. Quando sua mente vagar, volte. Gentilmente.\nEscreva aqui como foi sua experiência:\n\"O silêncio não é um vazio — é um espaço onde Deus pode falar.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Em uma cultura barulhenta e hiperconectada, o silêncio é uma das práticas mais contraculturais. Vivemos cercados por estímulos e notificações. A prática do silêncio nos convida a recuperar um espaço sagrado diante de Deus — não apenas ficar sem som, mas criar um ambiente onde a alma pode respirar.",
+        "apostila_pdf": "/apostilas/passo-12.pdf"
+      },
+      "ouca": {
+        "titulo": "O Silêncio Como Espaço Sagrado",
+        "spotify_url": ""
       }
     },
     {
@@ -537,26 +1021,70 @@
         "titulo": "A Generosidade Como Estilo De Vida",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és o Doador de toda boa dádiva. Tudo o que tenho vem de Ti. Perdoa-me pelas vezes em que segurei o que era Teu, achando que era meu.\nAjuda-me a viver com mãos abertas. Ajuda-me a confiar que Tu és minha fonte — não meu salário, não minha poupança, não minhas posses.\nEnsina-me a dar com alegria, não com obrigação. Ensina-me a ser generoso como Tu és generoso comigo.\nQue a minha generosidade não seja para ser vista, mas para refletir o Teu amor.\nAmém."
+        "instrucoes": "Senhor,\nTu és o Doador de toda boa dádiva. Tudo o que tenho vem de Ti. Perdoa-me pelas vezes em que segurei o que era Teu, achando que era meu.\nAjuda-me a viver com mãos abertas. Ajuda-me a confiar que Tu és minha fonte — não meu salário, não minha poupança, não minhas posses.\nEnsina-me a dar com alegria, não com obrigação. Ensina-me a ser generoso como Tu és generoso comigo.\nQue a minha generosidade não seja para ser vista, mas para refletir o Teu amor.\nAmém.",
+        "experimento": "Escolha um gesto de generosidade esta semana e faça sem contar para ninguém. Pode ser doar algo, preparar um café, ou oferecer seu tempo para ouvir alguém.",
+        "pergunta": "Suas mãos estão abertas ou fechadas?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique a generosidade.\nEsta semana, escolha UMA forma de praticar a generosidade:\nSepare um valor intencional para doar (pode ser para a igreja, para uma pessoa, para uma causa)\nDoe algo que você não usa mais\nOfereça seu tempo para ouvir alguém que precisa\nPague um café para alguém\nFaça um gesto de generosidade de forma anônima\nEscreva aqui o que você vai fazer:\n\"A generosidade não é sobre o que você perde — é sobre o que você se torna.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Vivemos em um mundo que molda o coração a acreditar que a felicidade vem do que possuímos. Jesus confronta essa lógica ao afirmar que a verdadeira felicidade não está em adquirir, mas em entregar. 'Mais bem-aventurado é dar do que receber' — Atos 20.35.",
+        "apostila_pdf": "/apostilas/passo-13.pdf"
+      },
+      "ouca": {
+        "titulo": "A Generosidade Como Estilo De Vida",
+        "spotify_url": ""
       }
     },
     {
@@ -574,26 +1102,70 @@
         "titulo": "A Meditação Como Leitura Orante",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és a Palavra que se fez carne. Tu falaste através das Escrituras e falas ainda hoje através delas.\nPerdoa-me pelas vezes em que li Tua Palavra com pressa, sem ouvir. Ajuda-me a ler devagar, a ouvir com atenção, a responder com sinceridade.\nEnsina-me a meditar na Tua Palavra — não para saber mais, mas para Te conhecer mais. Que a Tua Palavra penetre meu coração e transforme minha vida.\nQue eu não seja apenas um ouvinte, mas um praticante da Tua Palavra.\nAmém."
+        "instrucoes": "Senhor,\nTu és a Palavra que se fez carne. Tu falaste através das Escrituras e falas ainda hoje através delas.\nPerdoa-me pelas vezes em que li Tua Palavra com pressa, sem ouvir. Ajuda-me a ler devagar, a ouvir com atenção, a responder com sinceridade.\nEnsina-me a meditar na Tua Palavra — não para saber mais, mas para Te conhecer mais. Que a Tua Palavra penetre meu coração e transforme minha vida.\nQue eu não seja apenas um ouvinte, mas um praticante da Tua Palavra.\nAmém.",
+        "experimento": "Escolha um versículo curto — como Salmo 23.1 ou João 15.5 — e leia bem devagar. Depois, leia de novo. Fique com ele. Repita em silêncio. Deixe a palavra penetrar.",
+        "pergunta": "Você tem lido a Bíblia para saber mais ou para se encontrar com Deus?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique a Lectio Divina.\nEsta semana, escolha um texto curto das Escrituras e pratique os quatro movimentos:\nLeia lentamente (Lectio)\nReflita sobre o que Deus está dizendo (Meditatio)\nOre respondendo a Deus (Oratio)\nDescanse na presença dEle (Contemplatio)\nVocê pode usar o Salmo 23, João 15.5, ou qualquer passagem curta.\nEscreva aqui o que você experimentou:\n\"A meditação é o caminho entre o saber e o ser.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Em uma cultura de pressa e leitura superficial, a meditação cristã nos chama a um caminho diferente: não consumir a Palavra rapidamente, mas permanecer nela até que penetre o coração. Meditar não é esvaziar a mente, mas enchê-la da voz de Deus.",
+        "apostila_pdf": "/apostilas/passo-14.pdf"
+      },
+      "ouca": {
+        "titulo": "A Meditação Como Leitura Orante",
+        "spotify_url": ""
       }
     },
     {
@@ -611,26 +1183,70 @@
         "titulo": "A Comunidade Como Corpo De Cristo",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu não me criaste para andar sozinho. Tu me colocaste em um corpo — um corpo com muitos membros, muitos dons, muitos jeitos de ser.\nPerdoa-me pelas vezes em que tentei viver a fé isolado. Ajuda-me a me conectar com outros, a abrir minha vida, a compartilhar meus fardos e a carregar os fardos dos outros.\nAjuda-me a ser parte de uma comunidade saudável — onde há amor prático, vulnerabilidade, compromisso, crescimento e acolhimento.\nQue eu não seja apenas um frequentador, mas um membro ativo do corpo de Cristo.\nQue, através da nossa comunidade, o mundo veja o Teu amor.\nAmém."
+        "instrucoes": "Senhor,\nTu não me criaste para andar sozinho. Tu me colocaste em um corpo — um corpo com muitos membros, muitos dons, muitos jeitos de ser.\nPerdoa-me pelas vezes em que tentei viver a fé isolado. Ajuda-me a me conectar com outros, a abrir minha vida, a compartilhar meus fardos e a carregar os fardos dos outros.\nAjuda-me a ser parte de uma comunidade saudável — onde há amor prático, vulnerabilidade, compromisso, crescimento e acolhimento.\nQue eu não seja apenas um frequentador, mas um membro ativo do corpo de Cristo.\nQue, através da nossa comunidade, o mundo veja o Teu amor.\nAmém.",
+        "experimento": "Entre em contato com alguém da sua igreja ou círculo de fé. Pergunte como a pessoa está. E ouça de verdade — sem pressa, sem agenda.",
+        "pergunta": "Você tem caminhado sozinho ou deixado outros caminharem com você?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Dê um passo em direção à comunidade.\nEsta semana, escolha UMA ação para fortalecer sua conexão com a comunidade:\nConvide alguém para um café ou refeição\nParticipe de um Pequeno Grupo (se já não participa)\nOfereça-se para servir em um ministério\nEnvie uma mensagem de encorajamento para alguém\nSeja vulnerável com uma pessoa de confiança sobre algo que você está enfrentando\nEscreva aqui o que você vai fazer:\n\"Você não pode seguir Jesus sozinho. A comunidade é o lugar onde a transformação acontece.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "A comunidade não é um complemento opcional da vida cristã — é essencial. Não é apenas sobre estar junto. É sobre ser parte de um corpo onde cada membro tem uma função, um lugar, um propósito. E onde a saúde de um afeta a saúde de todos.",
+        "apostila_pdf": "/apostilas/passo-15.pdf"
+      },
+      "ouca": {
+        "titulo": "A Comunidade Como Corpo De Cristo",
+        "spotify_url": ""
       }
     },
     {
@@ -648,26 +1264,70 @@
         "titulo": "O Serviço Como Expressão Do Reino",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu és o Rei que escolheu a toalha e a bacia. Tu és o Mestre que lavou os pés dos discípulos. Tu nos deste o exemplo — e nos chamaste a fazer o mesmo.\nPerdoa-me pelas vezes em que busquei ser servido em vez de servir. Perdoa-me pelas vezes em que servi para ser visto. Perdoa-me pelas vezes em que deixei de servir por orgulho ou preguiça.\nAjuda-me a ter um coração de servo. Ajuda-me a ver as necessidades ao meu redor. Ajuda-me a servir com alegria, sem esperar nada em troca.\nQue o meu serviço seja uma expressão do Teu amor — e que, ao servir, eu me torne mais parecido contigo.\nAmém."
+        "instrucoes": "Senhor,\nTu és o Rei que escolheu a toalha e a bacia. Tu és o Mestre que lavou os pés dos discípulos. Tu nos deste o exemplo — e nos chamaste a fazer o mesmo.\nPerdoa-me pelas vezes em que busquei ser servido em vez de servir. Perdoa-me pelas vezes em que servi para ser visto. Perdoa-me pelas vezes em que deixei de servir por orgulho ou preguiça.\nAjuda-me a ter um coração de servo. Ajuda-me a ver as necessidades ao meu redor. Ajuda-me a servir com alegria, sem esperar nada em troca.\nQue o meu serviço seja uma expressão do Teu amor — e que, ao servir, eu me torne mais parecido contigo.\nAmém.",
+        "experimento": "Faça uma tarefa simples para alguém sem contar que foi você. Pode ser lavar a louça, preparar o café, arrumar algo que outra pessoa normalmente cuida. Só você e Deus sabem.",
+        "pergunta": "O que muda em você quando serve sem esperar reconhecimento?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Pratique o serviço invisível.\nEsta semana, escolha UM ato de serviço que você fará sem contar para ninguém :\nFaça uma tarefa doméstica que normalmente outra pessoa faz\nAjude alguém com uma necessidade prática\nEnvie uma mensagem de encorajamento para alguém\nPague um café para alguém\nOrganize algo sem que ninguém saiba que foi você\nO objetivo é servir sem esperar reconhecimento .\n\"Servir não é sobre o que você faz — é sobre quem você se torna.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "O serviço é a mais clara expressão do caráter de Jesus. O próprio Rei escolheu a toalha e a bacia. O Criador se inclinou para lavar os pés dos discípulos. O serviço não é um detalhe do Evangelho — é uma expressão visível do amor de Deus.",
+        "apostila_pdf": "/apostilas/passo-16.pdf"
+      },
+      "ouca": {
+        "titulo": "O Serviço Como Expressão Do Reino",
+        "spotify_url": ""
       }
     },
     {
@@ -685,26 +1345,70 @@
         "titulo": "O Testemunho Como Coerência De Vida",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
-        "instrucoes": "Senhor,\nTu nos chamaste para ser Tuas testemunhas. Não para ser perfeitos, mas para ser coerentes. Não para ter todas as respostas, mas para viver de tal forma que outros possam ver a Ti.\nAjuda-me a viver com integridade. Ajuda-me a ser a mesma pessoa em todos os lugares. Ajuda-me a amar como Tu amaste — de forma prática, sacrificial e visível.\nQue minha vida seja uma carta que outros possam ler — e que, ao ler, eles vejam a Ti.\nDá-me coragem para compartilhar minha história. Dá-me palavras para falar do que Tu fizeste. E, acima de tudo, dá-me um coração que ama.\nQue a minha vida aponte para Ti.\nAmém."
+        "instrucoes": "Senhor,\nTu nos chamaste para ser Tuas testemunhas. Não para ser perfeitos, mas para ser coerentes. Não para ter todas as respostas, mas para viver de tal forma que outros possam ver a Ti.\nAjuda-me a viver com integridade. Ajuda-me a ser a mesma pessoa em todos os lugares. Ajuda-me a amar como Tu amaste — de forma prática, sacrificial e visível.\nQue minha vida seja uma carta que outros possam ler — e que, ao ler, eles vejam a Ti.\nDá-me coragem para compartilhar minha história. Dá-me palavras para falar do que Tu fizeste. E, acima de tudo, dá-me um coração que ama.\nQue a minha vida aponte para Ti.\nAmém.",
+        "experimento": "Compartilhe com alguém, de forma simples e sincera, o que Deus tem feito na sua vida. Pode ser uma frase, uma história, um convite para vir à igreja. Nada grandioso. Apenas autêntico.",
+        "pergunta": "Se sua vida fosse uma carta, o que ela estaria comunicando sobre Deus?"
       },
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Compartilhe sua história.\nEsta semana, compartilhe com alguém o que Deus tem feito em sua vida. Pode ser:\nUma conversa com um amigo ou familiar\nUm testemunho no Pequeno Grupo\nUm convite para alguém vir à igreja\nUm gesto de amor que fale mais que palavras\nNão precisa ser algo grandioso. Apenas comece.\n\"Sua vida é a única Bíblia que algumas pessoas vão ler.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
         ]
+      },
+      "para_comecar": {
+        "resumo": "Chegamos ao último encontro da nossa jornada. Você percorreu um longo caminho — começou com o convite para ser aprendiz e agora chega à última prática: o testemunho. Não é sobre ter respostas para tudo. É sobre viver de tal forma que a sua vida aponte para Jesus.",
+        "apostila_pdf": "/apostilas/passo-17.pdf"
+      },
+      "ouca": {
+        "titulo": "O Testemunho Como Coerência De Vida",
+        "spotify_url": ""
       }
     }
   ]
