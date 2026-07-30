@@ -6,11 +6,11 @@
 
 | Role | Hex | CSS Variable |
 |------|-----|--------------|
-| Accent | `#22C55E` | `--color-accent` |
+| Accent | `#0d9466` | `--color-accent` |
 | On Accent | `#FFFFFF` | `--color-on-accent` |
-| Accent Soft | `#DCFCE7` | `--color-accent-soft` |
-| Accent Border | `rgba(34, 197, 94, 0.15)` | `--color-accent-border` |
-| Accent Hover | `rgba(34, 197, 94, 0.08)` | `--color-accent-hover` |
+| Accent Soft | `rgba(13, 148, 102, 0.08)` | `--color-accent-soft` |
+| Accent Border | `rgba(13, 148, 102, 0.10)` | `--color-accent-border` |
+| Accent Hover | `rgba(13, 148, 102, 0.14)` | `--color-accent-hover` |
 
 ## Visual Identity
 - Tema: **Verde Natureza** — crescimento, frutificação, envio
@@ -22,15 +22,15 @@
 ### Step Badge
 ```css
 .step-badge.etapa-2 {
-  background: #DCFCE7;
-  color: #166534;
-  border-color: rgba(34, 197, 94, 0.2);
+  background: rgba(13, 148, 102, 0.08);
+  color: #0b6f4d;
+  border-color: rgba(13, 148, 102, 0.10);
 }
 ```
 
 ### Progress Indicator
 ```css
 .progress-bar.etapa-2 {
-  background: #22C55E;
+  background: #0d9466;
 }
 ```

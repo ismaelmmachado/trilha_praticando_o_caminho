@@ -4,6 +4,7 @@ const path = require('path');
 const dados = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'dados', 'passos.json'), 'utf-8'));
 
 const resumos = {
+  1: "Bem-vindo ao primeiro passo da jornada. Você está prestes a descobrir o que significa, de fato, ser aprendiz de Jesus. Não se trata de saber mais sobre Ele — trata-se de estar com Ele, tornar-se como Ele e fazer como Ele fez. Respire fundo. O caminho começa aqui.",
   2: "Agora damos o segundo passo. Vamos falar sobre formação. Pode ser que você nunca tenha pensado sobre isso, mas a verdade é que todos nós estamos sendo formados o tempo todo — pela cultura, pelo trabalho, pelas redes sociais, pelos hábitos. A pergunta não é se você está sendo formado. A pergunta é: por quem e para quê?",
   3: "A transformação acontece pela prática — não por esforço isolado, apenas estudo ou esperar um milagre. Jesus não nos deu apenas um destino. Ele nos deu um caminho. E esse caminho pode ser aprendido, praticado e vivido, um passo de cada vez.",
   4: "Quais são as práticas que nos formam? Ao longo da história, os seguidores de Jesus descobriram práticas que abrem espaço para Deus agir. Não são tarefas para cumprir, mas ritmos que nos ajudam a estar com Jesus, tornar-nos como Ele e fazer como Ele fez.",
@@ -23,6 +24,7 @@ const resumos = {
 };
 
 const experimentos = {
+  1: "Esta semana, escolha um momento do dia para ficar 5 minutos em silêncio com Jesus. Pode ser ao acordar, no almoço ou antes de dormir. Apenas esteja com Ele. Sem roteiro. Sem metas. Só presença.",
   2: "Se você puder fazer uma coisa esta semana, que tal escolher UMA das seis forças que nos formam (hábitos, relacionamentos, histórias, ambiente, tempo, experiências) e observar como ela está te moldando? Só observe. Não precisa mudar nada ainda.",
   3: "Se você puder fazer uma coisa esta semana, que tal repetir um pequeno gesto todos os dias? Pode ser sorrir para alguém, respirar fundo antes de responder, ou agradecer uma vez por dia. Uma prática simples, sem meta.",
   4: "Escolha UMA das nove práticas para experimentar esta semana. Pode ser 5 minutos de silêncio, uma refeição sem celular, ou agradecer antes de dormir. Só uma prática. Sem pressão. Sem meta.",
@@ -42,6 +44,7 @@ const experimentos = {
 };
 
 const perguntas = {
+  1: "O que significa para você ser um aprendiz de Jesus? — Não a resposta certa, mas a sua resposta.",
   2: "Quem está te formando? — A pergunta não é se você está sendo formado, mas por quem e para quê.",
   3: "Você está esperando um atalho ou disposto a caminhar? — A transformação não é um evento, é um processo.",
   4: "Qual prática poderia abrir espaço para Deus na sua rotina esta semana?",
@@ -61,8 +64,6 @@ const perguntas = {
 };
 
 dados.passos.forEach(passo => {
-  if (passo.id === 1) return;
-
   const id = passo.id;
 
   // 1. para_comecar
@@ -114,4 +115,4 @@ fs.writeFileSync(
   'utf-8'
 );
 
-console.log('Todos os 16 passos (2-17) foram migrados para o novo formato!');
+console.log('Todos os 17 passos foram migrados para o novo formato!');

@@ -1,6 +1,6 @@
-# APOSTILA DO FACILITADOR — ESTAÇÃO 2 - TRILHA PRATICANDO O CAMINHO (17 PASSOS)
+# APOSTILA DO MAPA — ESTAÇÃO 2 - TRILHA PRATICANDO O CAMINHO (17 PASSOS)
 
-## Guia Para Quem Conduz Os Encontros
+## Mapa Para Quem Conduz Os Encontros
 
 ## Para Começar
 
@@ -13,7 +13,7 @@ Você não precisa saber tudo sobre o livro. Você precisa estar disponível .
 
 Seção
 O que você vai encontrar
-O papel do facilitador
+O papel de quem conduz
 O que você é — e o que você não é
 Antes de cada encontro
 O que preparar, como se preparar
@@ -31,7 +31,7 @@ Como lidar com situações
 Silêncio, dúvidas, desânimo
 O cuidado com quem cuida
 Como cuidar de si para cuidar do outro
-Checklist do facilitador
+Checklist
 Lista rápida para cada encontro
 ## A Trilha E O Livro — Como Se Relacionam
 
@@ -41,7 +41,7 @@ Lista rápida para cada encontro
 
 Mas você não precisa ler o livro para participar da Trilha .
 As apostilas contêm o conteúdo essencial para cada encontro. A leitura do livro é um aprofundamento — uma opção para quem quer ir mais fundo.
-Capítulos por passo (para referência do facilitador):
+Capítulos por passo (para referência):
 Encontro
 Título
 Capítulos do Livro

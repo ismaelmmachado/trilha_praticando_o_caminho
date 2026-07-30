@@ -23,7 +23,7 @@
 /
 ├── index.html               # Página inicial (landing page da trilha)
 ├── complementar.html        # Material complementar (livros, podcasts, guias)
-├── facilitador.html         # Guia do facilitador/orientador
+├── mapa.html                # Mapa da jornada (perguntas, dicas, estrutura)
 ├── passo-1.html .. 17.html  # Páginas de cada passo (geradas automaticamente)
 ├── passo.html               # Redirect para passo-1.html (opcional)
 │
@@ -31,7 +31,7 @@
 │   ├── tokens.css           # Design tokens (fontes, cores, espaçamento, sombras)
 │   ├── estilo.css           # Estilos globais (layout, componentes, seções)
 │   ├── complementar.css     # Estilos específicos da página complementar
-│   └── guia.css             # Estilos específicos da página do guia
+│   └── mapa.css             # Estilos específicos da página do mapa
 │
 ├── scripts/
 │   └── gerar-passos.js      # Gerador: JSON → HTML estático
@@ -158,7 +158,7 @@ Padrão de links no nav:
 <nav class="nav" role="navigation" aria-label="Navegação principal">
   <a href="index.html">Início</a>
   <a href="complementar.html">Material Complementar</a>
-  <a href="facilitador.html">Guia</a>
+  <a href="mapa.html">Mapa</a>
 </nav>
 ```
 
@@ -391,10 +391,10 @@ Arquivo `dados/passos.json` — array de objetos:
 | 3 | Escolher cores de acento para cada etapa e atualizar `tokens.css` | `css/tokens.css` |
 | 4 | Se necessário, trocar as fontes headig/body | `css/tokens.css` |
 | 5 | Copiar `css/estilo.css` — não precisa alterar | `css/estilo.css` |
-| 6 | Copiar `css/complementar.css` e `css/guia.css` — ajustar se necessário | `css/*.css` |
+| 6 | Copiar `css/complementar.css` e `css/mapa.css` — ajustar se necessário | `css/*.css` |
 | 7 | Copiar `scripts/gerar-passos.js` — alterar nome da trilha no template e regenerar | `scripts/gerar-passos.js` |
 | 8 | Criar `index.html` personalizado (pode copiar e adaptar) | `index.html` |
-| 9 | Criar `complementar.html` e `facilitador.html` adaptados | — |
+| 9 | Criar `complementar.html` e `mapa.html` adaptados | — |
 | 10 | Colocar apostilas PDF em `apostilas/` | `apostilas/*.pdf` |
 | 11 | Rodar `node scripts/gerar-passos.js` para gerar todas as páginas | — |
 | 12 | Publicar (GitHub Pages, Netlify, etc.) | — |

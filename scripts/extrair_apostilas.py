@@ -4,8 +4,14 @@ import json
 import re
 import os
 import glob
+import argparse
 
-TMP_DIR = '/tmp'
+parser = argparse.ArgumentParser(description='Extrair conteúdo de apostilas DOCX para JSON.')
+parser.add_argument('--input-dir', default='/tmp', help='Diretório com os arquivos .docx (default: /tmp)')
+parser.add_argument('--output', default=None, help='Caminho do arquivo JSON de saída (default: dados/passos.json)')
+args = parser.parse_args()
+
+TMP_DIR = args.input_dir
 LIVRO_TITULO = 'Praticando o Caminho'
 LIVRO_AUTOR = 'John Mark Comer'
 
@@ -222,7 +228,7 @@ def main():
         'passos': passos_lista
     }
     
-    output_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'dados', 'passos.json')
+    output_path = args.output or os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'dados', 'passos.json')
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     

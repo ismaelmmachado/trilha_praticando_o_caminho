@@ -32,7 +32,7 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
 /
 ├── index.html              # Home (etapas + grid de passos + transição)
 ├── passo-{1..17}.html      # Páginas estáticas geradas (1 por passo)
-├── facilitador.html        # Guia do facilitador (10 seções + checklist)
+├── mapa.html               # Mapa da jornada (perguntas, dicas e estrutura)
 ├── complementar.html       # Material complementar
 ├── dados/
 │   └── passos.json         # Conteúdo real dos 17 passos
@@ -56,7 +56,7 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
 Todo o conteúdo do site foi extraído das 17 apostilas originais (formato docx) via `scripts/extrair_apostilas.py`. **Nada foi inventado** — seções sem conteúdo das apostilas permanecem como placeholders (vídeos, links do livro).
 
 - 2 seções de transição entre Etapa 1 e Etapa 2 (conteúdo do Guia de Transição)
-- Guia do Facilitador com 10 seções + checklist (conteúdo da Apostila do Facilitador)
+- Mapa da Jornada com perguntas, dicas e estrutura (conteúdo da Apostila do Mapa)
 
 ## Design System
 
@@ -67,7 +67,7 @@ Gerado com [UI-UX Pro Max](../.opencode/skills/ui-ux-pro-max).
 | Tipografia | Playfair Display (títulos) + Inter (corpo) |
 | Estilo | Soft UI Evolution + Minimalism |
 | Etapa 1 (accent) | `#EAB308` |
-| Etapa 2 (accent) | `#22C55E` |
+| Etapa 2 (accent) | `#0d9466` |
 | Background | `#FAFAF8` |
 | Texto | `#1C1917` |
 | Muted | `#78716C` |
@@ -108,6 +108,4 @@ Acessar http://localhost:8080
 
 ## Salvamento (Git)
 
-- Branch padrão: `homologacao`
-- Tags automáticas por contexto (feature, fix, refactor, chore, docs)
-- Comando: `git add . && git commit -m "<tipo>: <descrição>" && git tag <tag> && git push origin homologacao --tags`
+Consulte [`AGENTS.md`](AGENTS.md) para regras detalhadas de commit, branch e tag.

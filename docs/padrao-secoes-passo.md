@@ -289,15 +289,15 @@ Evitar o termo "Facilitador" em textos visíveis ao usuário, pois quem discipul
 
 | Onde | Como estava | Como fica |
 |------|-------------|-----------|
-| Página do facilitador | "Guia do Facilitador" | "Guia" |
+| Página do mapa | "Guia do Facilitador" | "Mapa" |
 | Seção de abertura | "O Papel do Facilitador" | "Seu Papel" |
 | Seção de checklist | "Checklist do Facilitador" | "Checklist" |
-| Nav (desktop) | "Guia do Facilitador" | "Guia" |
-| Nav (mobile) | "Facilitador" | "Guia" |
-| Breadcrumb | "Guia do Facilitador" | "Guia" |
-| `<title>` | "Guia do Facilitador · Praticando o Caminho" | "Guia · Praticando o Caminho" |
+| Nav (desktop) | "Guia do Facilitador" | "Mapa" |
+| Nav (mobile) | "Facilitador" | "Mapa" |
+| Breadcrumb | "Guia do Facilitador" | "Mapa" |
+| `<title>` | "Guia do Facilitador · Praticando o Caminho" | "Mapa da Jornada · Praticando o Caminho" |
 
-A meta description (SEO) pode manter "Guia para facilitadores" por ser texto não visível.
+A meta description (SEO) pode informar "Mapa da jornada de discipulado" ou manter texto genérico.
 
 ## Histórico
 
