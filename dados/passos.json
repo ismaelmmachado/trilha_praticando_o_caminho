@@ -48,14 +48,18 @@
         "titulo": "O Convite Para Ser Aprendiz",
         "url": ""
       },
-      "aprofunde": [
-        {
-          "tipo": "livro",
+      "aprofunde": {
+        "livro": {
           "titulo": "Praticando o Caminho",
           "autor": "John Mark Comer",
           "url": ""
+        },
+        "musica": {
+          "titulo": "",
+          "artista": "",
+          "url": ""
         }
-      ],
+      },
       "pratique": {
         "desafio": "",
         "instrucoes": "Senhor,\nObrigado pelo convite. Obrigado por me chamares não para uma religião, mas para uma jornada. Obrigado por me convidares a aprender contigo, a tornar-me como tu e a fazer o que tu fizeste.\nAjuda-me a entender o que significa ser teu aprendiz. Dá-me coragem para dar os próximos passos, mesmo que eu não saiba para onde estão me levando.\nQue eu não me contente com uma fé que só enche a cabeça, mas que não transforma a vida.\nAmém."
@@ -63,11 +67,50 @@
       "organizese": {
         "dias": [
           {
-            "dia": "Desafio da Semana",
-            "tema": "Responda à pergunta.\nEsta semana, reserve um momento para refletir e escrever sua resposta:\n\"Eu sou cristão ou aprendiz?\"\nNão precisa ser uma resposta definitiva. Só uma reflexão honesta.\n\"O caminho começa com um passo.\"",
+            "dia": "Segunda-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Terça-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quarta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Quinta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sexta-feira",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Sábado",
+            "tema": "",
+            "leitura": ""
+          },
+          {
+            "dia": "Domingo",
+            "tema": "",
             "leitura": ""
           }
-        ]
+        ],
+        "desafio_semana": "Responda à pergunta.\nEsta semana, reserve um momento para refletir e escrever sua resposta:\n\"Eu sou cristão ou aprendiz?\"\nNão precisa ser uma resposta definitiva. Só uma reflexão honesta.\n\"O caminho começa com um passo.\""
+      },
+      "para_comecar": {
+        "resumo": "Bem-vindo ao primeiro passo da Trilha Praticando o Caminho. Você está aqui porque, de alguma forma, sente que a fé pode ser mais do que você tem vivido. Este encontro é sobre um convite — não para mais uma atividade religiosa, mas para aprender com Jesus, como os primeiros seguidores dele aprenderam.",
+        "apostila_pdf": "/apostilas/passo-1.pdf"
+      },
+      "ouca": {
+        "titulo": "O Convite Para Ser Aprendiz",
+        "spotify_url": ""
       }
     },
     {

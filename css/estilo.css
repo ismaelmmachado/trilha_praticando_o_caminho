@@ -702,6 +702,188 @@ ul { list-style: none; }
   }
 }
 
+/* Para Começar */
+.para-comecar-footer {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-height: 44px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px var(--accent-border);
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--accent-border);
+}
+
+.download-icon {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Ouça */
+.ouca-placeholder {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.spotify-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--radius-md);
+}
+
+/* Aprofunde boxes */
+.aprofunde-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.aprofunde-box {
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.aprofunde-box-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--accent-soft);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-text);
+}
+
+.aprofunde-box-icon {
+  font-size: 1rem;
+}
+
+.aprofunde-box-body {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.aprofunde-item-titulo {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.aprofunde-item-autor {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.aprofunde-item-breve {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.aprofunde-box-body .resource-link {
+  align-self: flex-start;
+  margin-top: var(--space-xs);
+}
+
+/* Organize grid (7 days) */
+.desafio-semana-box {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  margin-bottom: var(--space-md);
+}
+
+.desafio-semana-box strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  margin-bottom: var(--space-xs);
+}
+
+.desafio-semana-box span {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.organize-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-sm);
+}
+
+.organize-day {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.organize-day strong {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--accent-text);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.organize-day p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--color-text);
+  flex-grow: 1;
+}
+
+.organize-day .day-empty {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.organize-day .day-leitura {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .site-header { display: none; }
@@ -742,6 +924,12 @@ ul { list-style: none; }
   .week-plan {
     grid-template-columns: 1fr;
   }
+  .aprofunde-boxes {
+    grid-template-columns: 1fr;
+  }
+  .organize-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .step-nav {
     flex-direction: column;
     align-items: stretch;
@@ -755,6 +943,9 @@ ul { list-style: none; }
 }
 
 @media (max-width: 480px) {
+  .organize-grid {
+    grid-template-columns: 1fr;
+  }
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
