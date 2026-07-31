@@ -9,18 +9,23 @@ Resumo: **Simples, Missional e Acolhedor; Reformado, Protestante e Presbiteriano
 ## Comportamento ao salvar
 
 ### 1. Comando "salvar" (genérico)
+**Sempre o padrão.** Salvar somente em `main` quando o usuário orientar explicitamente.
 - Branch: `homologacao` (criar se não existir)
 - Tag: gerada automaticamente com base no contexto da conversa (ex: `v1.0.0-feature-x`, `fix-y`, `refactor-z`)
 - Commit: `git add . && git commit -m "mensagem descritiva"`
 - Push: `git push origin homologacao --tags`
 
 ### 2. Comando "salvar em main"
+Somente quando o usuário pedir explicitamente ("salvar em main").
 - Branch: `main`
 - Tag: gerada automaticamente com base no contexto, ou usar a tag informada pelo usuário
 - Commit: `git add . && git commit -m "mensagem descritiva"`
 - Push: `git push origin main --tags`
 
-### 3. Tag automática
+### 3. Retorno à homologação
+Após concluir QUALQUER processo de salvamento (homologacao ou main), retornar à branch `homologacao` (`git checkout homologacao`).
+
+### 4. Tag automática
 Se o usuário não informar uma tag, gerar baseado no contexto:
 - Nova funcionalidade → `v1.x.x-<feature-name>`
 - Correção de bug → `fix-<descricao-curta>`
@@ -28,7 +33,7 @@ Se o usuário não informar uma tag, gerar baseado no contexto:
 - Config/infra → `chore-<descricao-curta>`
 - Documentação → `docs-<descricao-curta>`
 
-### 4. Fluxo padrão
+### 5. Fluxo padrão
 ```bash
 git add .
 git commit -m "<tipo>: <descrição>"
