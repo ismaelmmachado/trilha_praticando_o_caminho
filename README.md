@@ -37,7 +37,9 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
 ├── dados/
 │   └── passos.json         # Conteúdo real dos 17 passos
 ├── scripts/
-│   └── gerar-passos.js     # Gerador de páginas estáticas dos passos
+│   ├── gerar-passos.js     # Gerador de páginas estáticas dos passos
+│   ├── extrair_apostilas.py# Extrator de conteúdo DOCX → JSON
+│   └── migrar-passos.js    # Script one-off (criação do conteúdo dos passos)
 ├── css/
 │   ├── tokens.css          # Design tokens (variáveis CSS)
 │   └── estilo.css          # Componentes e layout

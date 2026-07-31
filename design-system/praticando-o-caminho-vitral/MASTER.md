@@ -33,10 +33,10 @@
 `--space-{xs,sm,md,lg,xl,2xl,3xl}` = `{4,8,16,24,32,48,64}px`
 
 ### Raio
-`--radius-{sm,md,lg,xl,full}` = `{8,12,16,24,9999}px`
+`--radius-{sm,md,lg,full}` = `{8,12,16,9999}px`
 
 ### Sombra
-`--shadow-{sm,md,lg,xl}` — 4 níveis progressivos
+`--shadow-lg` — `0 8px 24px rgba(0,0,0,0.08)`
 
 ## Estrutura de Página
 - `.site-header` + `.mobile-header` com nav responsiva

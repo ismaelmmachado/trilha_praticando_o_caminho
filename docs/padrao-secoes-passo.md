@@ -167,12 +167,13 @@ Cada seção segue a estrutura HTML e classes CSS abaixo. Manter fielmente ao re
   <div class="step-section-content">
     <div class="ouca-placeholder">
       <iframe class="spotify-embed" src="{spotify_url}" allowfullscreen></iframe>
-      <!-- fallback: -->
-      <p style="color:var(--color-muted);padding:2rem;text-align:center;">Em breve</p>
+      <!-- fallback (sem inline style): -->
+      <p>Em breve</p>
     </div>
   </div>
-</div>
 ```
+
+> Estilo do fallback via CSS: `.ouca-placeholder p` (muted, padding 2rem, centralizado). Não usar inline style.
 
 - `.ouca-placeholder`: aspect-ratio 16/9, border-radius `var(--radius-md)`, bg `var(--color-bg)`, border 1px `var(--color-border)`, flex centered
 - `.spotify-embed`: width 100%, height 100%, border none, border-radius `var(--radius-md)`
@@ -267,7 +268,7 @@ Cada seção segue a estrutura HTML e classes CSS abaixo. Manter fielmente ao re
 Para cada passo em `dados/passos.json`:
 
 - [ ] `para_comecar.resumo` — texto acolhedor (só a abertura, NÃO o devocional inteiro)
-- [ ] `para_comecar.apostila_pdf` — "/apostilas/passo-{id}.pdf"
+- [ ] `para_comecar.apostila_pdf` — "/apostilas/passo-{id}.pdf" (até o PDF existir, deixar `""` → botão "Em breve")
 - [ ] `ouca.titulo` — título do áudio
 - [ ] `ouca.spotify_url` — URL embed Spotify ou ""
 - [ ] `aprofunde.livro` — { titulo, autor, url } ou {}

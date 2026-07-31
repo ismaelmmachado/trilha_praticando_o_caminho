@@ -34,7 +34,9 @@
 │   └── mapa.css             # Estilos específicos da página do mapa
 │
 ├── scripts/
-│   └── gerar-passos.js      # Gerador: JSON → HTML estático
+│   ├── gerar-passos.js      # Gerador: JSON → HTML estático
+│   ├── extrair_apostilas.py # Extrator de conteúdo DOCX → JSON
+│   └── migrar-passos.js     # Script one-off (criação do conteúdo dos passos)
 │
 ├── dados/
 │   └── passos.json          # Dados estruturados de todos os passos
@@ -123,17 +125,16 @@ Cada etapa da trilha tem sua própria paleta de acento, definida via `data-etapa
 
 ```css
 --radius-sm: 8px;   --radius-md: 12px;   --radius-lg: 16px;
---radius-xl: 24px;  --radius-full: 9999px;
+--radius-full: 9999px;
 ```
 
 ### 3.6 Sombra
 
 ```css
---shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
---shadow-md: 0 4px 12px rgba(0,0,0,0.06);
 --shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
---shadow-xl: 0 16px 40px rgba(0,0,0,0.10);
 ```
+
+> Nota: o `tokens.css` atual define apenas estes tokens (raio `sm/md/lg/full`, sombra `lg`). Para uma nova trilha, adicione níveis extras se necessário.
 
 ### 3.7 Container
 
@@ -150,7 +151,7 @@ Cada etapa da trilha tem sua própria paleta de acento, definida via `data-etapa
 
 Duas variantes, sempre presentes:
 
-- **`.site-header`** — visível em telas ≥ 768px, com `.nav` (links: Início, Material Complementar, Guia)
+- **`.site-header`** — visível em telas ≥ 768px, com `.nav` (links: Início, Material Complementar, Mapa)
 - **`.mobile-header`** — visível em telas < 768px, com `.mobile-nav` (mesmo links, versão curta)
 
 Padrão de links no nav:
@@ -239,69 +240,75 @@ Usa `var(--accent-gradient)` como fundo.
 
 ## 5. Modelo de Dados
 
-Arquivo `dados/passos.json` — array de objetos:
+Arquivo `dados/passos.json` — objeto com `etapas` (array) e `passos` (array de passos). Estrutura real de cada passo:
 
 ```json
-[
-  {
-    "id": 1,
-    "titulo": "Título do Passo",
-    "subtitulo": "Subtítulo curto",
-    "etapa": 1,
-    "resumo": "Parágrafo introdutório do passo...",
-    "para_comecar": {
-      "texto": "Instrução inicial para o encontro...",
-      "pergunta": "Pergunta opcional de abertura"
+{
+  "id": 1,
+  "titulo": "Título do Passo",
+  "subtitulo": "Subtítulo curto",
+  "etapa": 1,
+  "status": "aberto",
+  "semana": 1,
+  "medite": {
+    "base_biblica": "Citações (NVT) separadas por '; ' com '—' antes da referência",
+    "devocional": "Texto devocional completo do passo (multilinha)"
+  },
+  "assista": {
+    "titulo": "Título do vídeo",
+    "url": "https://..."  // vazio → seção não renderizada no formato novo
+  },
+  "aprofunde": {
+    "livro": {
+      "titulo": "Título do Livro",
+      "autor": "Autor",
+      "url": "https://..."  // vazio → botão "Em breve"
     },
-    "ferramentas": [
-      {
-        "titulo": "Nome do Recurso",
-        "descricao": "Descrição breve",
-        "link": "https://...",
-        "rotulo": "Acessar",
-        "icone": "📖"
-      }
-    ],
-    "ouca": {
-      "tipo": "spotify" | "placeholder",
-      "src": "URL do embed ou vazio"
-    },
-    "aprofunde": {
-      "livro": {
-        "titulo": "Título do Livro",
-        "autor": "Autor",
-        "link": "https://..."
-      },
-      "musica": {
-        "titulo": "Título da Música",
-        "artista": "Artista",
-        "link": "https://..."
-      }
-    },
-    "pratique": {
-      "experimento": "Ação concreta para a semana...",
-      "pergunta": "Pergunta reflexiva..."
-    },
-    "organizese": {
-      "introducao": "Frase de abertura da seção...",
-      "dias": [
-        {"dia": "Seg", "texto": "Atividade do dia"},
-        {"dia": "Ter", "texto": ""},
-        {"dia": "Qua", "texto": ""},
-        {"dia": "Qui", "texto": ""},
-        {"dia": "Sex", "texto": ""},
-        {"dia": "Sáb", "texto": ""},
-        {"dia": "Dom", "texto": ""}
-      ]
-    },
-    "pdf": "apostilas/seu-arquivo.pdf"
+    "musica": {
+      "titulo": "Título da Música",
+      "artista": "Artista",
+      "url": "https://..."  // vazio → botão "Em breve"
+    }
+  },
+  "pratique": {
+    "desafio": "",            // não usado no formato novo
+    "experimento": "Ação concreta e possível para a semana",
+    "pergunta": "Pergunta reflexiva (para levar no bolso)",
+    "instrucoes": "Oração original (fallback legado)"
+  },
+  "organizese": {
+    "dias": [
+      { "dia": "Segunda-feira", "tema": "", "leitura": "" },
+      { "dia": "Terça-feira", "tema": "", "leitura": "" },
+      { "dia": "Quarta-feira", "tema": "", "leitura": "" },
+      { "dia": "Quinta-feira", "tema": "", "leitura": "" },
+      { "dia": "Sexta-feira", "tema": "", "leitura": "" },
+      { "dia": "Sábado", "tema": "", "leitura": "" },
+      { "dia": "Domingo", "tema": "", "leitura": "" }
+    ]
+  },
+  "para_comecar": {
+    "resumo": "Texto acolhedor (abertura, NÃO o devocional inteiro)",
+    "apostila_pdf": ""   // "" ou "/apostilas/passo-N.pdf"; vazio → botão "Em breve"
+  },
+  "ouca": {
+    "titulo": "Título do áudio/podcast",
+    "spotify_url": "https://open.spotify.com/embed/..."  // vazio → "Em breve"
   }
-]
+}
 ```
 
-**Campos obrigatórios:** `id`, `titulo`, `etapa`, `resumo`, `para_comecar.texto`, `pratique.experimento`, `pratique.pergunta`, `organizese.dias`.
+**Regras de renderização (formato novo — detectado por `passo.para_comecar`):**
 
-**Campos opcionais:** `ouca.src`, `ferramentas` (array vazio omitido), `aprofunde.livro`/`musica` (omitir se não houver).
+- Seções renderizadas: Para Começar → Ferramentas → Ouça → Aprofunde → Pratique → Organize-se → Navegação.
+- **Ferramentas** são fixas/hardcoded no gerador (Bible App, Lectio 365, Vitral no Spotify) — não vêm do JSON.
+- `medite` e `assista` são preservados no JSON (fonte das apostilas), mas **não são renderizados no formato novo**.
+- Se `para_comecar` ausente, o gerador usa o **formato legado** (Medite + Assista).
+- Campos vazios (`url`, `spotify_url`, `apostila_pdf`, `tema`, etc.) exibem "Em breve".
+
+**Campos obrigatórios:** `id`, `titulo`, `subtitulo`, `etapa`, `status`, `semana`, `medite`, `assista`, `aprofunde`, `pratique`, `organizese`, `para_comecar`, `ouca`.
+
+**Campos opcionais:** conteúdo de `url`/`spotify_url`/`apostila_pdf`/`musica.*` (podem ficar vazios até existir material).
 
 ---
 
@@ -395,7 +402,7 @@ Arquivo `dados/passos.json` — array de objetos:
 | 7 | Copiar `scripts/gerar-passos.js` — alterar nome da trilha no template e regenerar | `scripts/gerar-passos.js` |
 | 8 | Criar `index.html` personalizado (pode copiar e adaptar) | `index.html` |
 | 9 | Criar `complementar.html` e `mapa.html` adaptados | — |
-| 10 | Colocar apostilas PDF em `apostilas/` | `apostilas/*.pdf` |
+| 10 | Colocar apostilas PDF em `apostilas/` e preencher `para_comecar.apostila_pdf` (até existirem, deixar `""` → botão "Em breve") | `apostilas/*.pdf`, `dados/passos.json` |
 | 11 | Rodar `node scripts/gerar-passos.js` para gerar todas as páginas | — |
 | 12 | Publicar (GitHub Pages, Netlify, etc.) | — |
 
@@ -409,25 +416,44 @@ Arquivo `dados/passos.json` — array de objetos:
   "titulo": "Meu Primeiro Passo",
   "subtitulo": "O início da jornada",
   "etapa": 1,
-  "resumo": "Este é o ponto de partida da nossa trilha.",
-  "para_comecar": {
-    "texto": "Leia o texto-base antes do encontro."
+  "status": "aberto",
+  "semana": 1,
+  "medite": {
+    "base_biblica": "Citação na NVT — Referência",
+    "devocional": "Texto devocional (pode ficar vazio no exemplo mínimo)."
+  },
+  "assista": {
+    "titulo": "Meu Primeiro Passo",
+    "url": ""
+  },
+  "aprofunde": {
+    "livro": { "titulo": "Título", "autor": "Autor", "url": "" },
+    "musica": { "titulo": "", "artista": "", "url": "" }
   },
   "pratique": {
+    "desafio": "",
     "experimento": "Faça algo concreto esta semana.",
-    "pergunta": "O que essa experiência te ensinou?"
+    "pergunta": "O que essa experiência te ensinou?",
+    "instrucoes": "Oração de encerramento (pode ficar vazia)."
   },
   "organizese": {
-    "introducao": "Sugestões para a semana:",
     "dias": [
-      {"dia": "Seg", "texto": ""},
-      {"dia": "Ter", "texto": ""},
-      {"dia": "Qua", "texto": ""},
-      {"dia": "Qui", "texto": ""},
-      {"dia": "Sex", "texto": ""},
-      {"dia": "Sáb", "texto": ""},
-      {"dia": "Dom", "texto": ""}
+      { "dia": "Segunda-feira", "tema": "", "leitura": "" },
+      { "dia": "Terça-feira", "tema": "", "leitura": "" },
+      { "dia": "Quarta-feira", "tema": "", "leitura": "" },
+      { "dia": "Quinta-feira", "tema": "", "leitura": "" },
+      { "dia": "Sexta-feira", "tema": "", "leitura": "" },
+      { "dia": "Sábado", "tema": "", "leitura": "" },
+      { "dia": "Domingo", "tema": "", "leitura": "" }
     ]
+  },
+  "para_comecar": {
+    "resumo": "Este é o ponto de partida da nossa trilha.",
+    "apostila_pdf": ""
+  },
+  "ouca": {
+    "titulo": "Meu Primeiro Passo",
+    "spotify_url": ""
   }
 }
 ```

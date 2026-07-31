@@ -48,6 +48,9 @@ git push origin <branch> --tags
 - `fix-hero-label` — hero-label "ESTAÇÃO 2 — PRATICANDO O CAMINHO"
 - `fix-ux-ui-ajustes` — PDF links → "Em breve", indicador progresso, aria-hidden, noscript, back-to-top, tokens, inline style app.js
 - `chore-limpeza-css` — variáveis não usadas removidas, back-to-top href corrigido, data-etapa removido
+- `fix-pdf-links-em-breve` — botão PDF → "Em breve" (sem 404), placeholders sem inline styles
+- `docs-regra-salvamento-homologacao` — regra: sempre homologacao, main só sob orientação, retorno à homologacao
+- `v1.0.0-mvp-lancamento` — preparação do MVP: hero corrigido, footer frase-guia, aria-current, foco visível, limpeza CSS, passo.html validado, README e checklist de lançamento
 
 ### Pendências (conteúdo)
 Todo conteúdo multimídia está como "Em breve" — aguardando material:
