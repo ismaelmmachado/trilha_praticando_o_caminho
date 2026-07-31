@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="refresh" content="0; url=passo-1.html" />
+  <meta name="description" content="Página de redirecionamento para os passos da jornada de discipulado Praticando o Caminho." />
   <title>Redirecionando... · Praticando o Caminho</title>
 </head>
 <body>
   <noscript>
     <p style="text-align:center;padding:2rem;font-family:sans-serif;">
-      Seu navegador não suporta JavaScript.
+      JavaScript está desabilitado.
       <a href="passo-1.html">Acessar Passo 1</a>
     </p>
   </noscript>
   <script>
     const id = new URLSearchParams(window.location.search).get('id');
-    if (id) window.location.replace('passo-' + id + '.html');
+    const n = Number.parseInt(id, 10);
+    if (Number.isInteger(n) && n >= 1 && n <= 17) window.location.replace('passo-' + n + '.html');
     else window.location.replace('passo-1.html');
   </script>
 </body>

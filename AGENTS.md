@@ -61,6 +61,7 @@ Todo conteúdo multimídia está como "Em breve" — aguardando material:
 
 ### Estrutura
 - `index.html` sem `data-etapa` (neutro — :root fallback no CSS)
-- Todos os HTMLs com `aria-hidden` em ícones, `back-to-top`, `noscript` fallback
+- Todos os HTMLs com `aria-hidden` em ícones e `back-to-top`; `passo.html` (redirect) com `noscript` fallback
 - `css/tokens.css` limpo (9 variáveis órfãs removidas)
 - Gerador `scripts/gerar-passos.js` atualizado com todas as mudanças de template
+- Footer padrão em todas as páginas com a frase-guia

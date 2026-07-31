@@ -196,24 +196,6 @@ ul { list-style: none; }
   background: rgba(0, 0, 0, 0.02);
 }
 
-/* Frase guia */
-.frase-guia {
-  text-align: center;
-  padding: var(--space-xl) 0;
-  margin: 0 auto;
-  max-width: 720px;
-}
-
-.frase-guia blockquote {
-  font-family: var(--font-heading);
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  font-style: italic;
-  line-height: 1.6;
-  color: var(--color-muted);
-  border-left: 3px solid var(--accent);
-  padding-left: var(--space-lg);
-}
-
 /* Steps */
 .etapa-group {
   margin-bottom: var(--space-2xl);
@@ -379,7 +361,7 @@ ul { list-style: none; }
 }
 
 .breadcrumb-sep {
-  color: var(--color-border);
+  color: var(--color-muted);
 }
 
 /* Page Header (step page) */
@@ -1070,6 +1052,7 @@ ul { list-style: none; }
 .mt-sm { margin-top: var(--space-sm); }
 .mt-md { margin-top: var(--space-md); }
 .mb-md { margin-bottom: var(--space-md); }
+.mb-xl { margin-bottom: var(--space-xl); }
 
 .text-center { text-align: center; }
 .text-muted { color: var(--color-muted); }
@@ -1081,13 +1064,6 @@ ul { list-style: none; }
   color: var(--color-muted);
   padding: 2rem;
   text-align: center;
-}
-
-.mapa-card { cursor: pointer; }
-.mapa-card summary {
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
 }
 
 /* Responsive */
@@ -1171,6 +1147,15 @@ ul { list-style: none; }
   color: var(--color-muted);
   text-align: center;
   padding: 2rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+.step-card:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 
 @media (prefers-reduced-motion: reduce) {

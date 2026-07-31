@@ -167,7 +167,7 @@ function renderAprofunde(passo) {
         <h2>Aprofunde</h2>
       </div>
       <div class="step-section-content">
-        <p style="color:var(--color-muted)">Materiais complementares em breve.</p>
+        <p class="text-muted">Materiais complementares em breve.</p>
       </div>
     </div>`;
   }
@@ -184,7 +184,7 @@ function renderAprofunde(passo) {
         <strong>${escapeHtml(r.titulo)}</strong>
         <span>${r.autor ? escapeHtml(r.autor) + ' · ' : ''}${escapeHtml(r.tipo)}</span>
       </div>
-      ${r.url ? `<a class="resource-link" href="${escapeHtml(r.url)}" target="_blank">Acessar</a>` : '<span class="resource-link" style="opacity:0.5">Em breve</span>'}
+      ${r.url ? `<a class="resource-link" href="${escapeHtml(r.url)}" target="_blank">Acessar</a>` : '<span class="resource-link is-empty">Em breve</span>'}
     </div>`;
   });
   html += `</div></div></div>`;
@@ -217,7 +217,7 @@ function renderPratique(passo) {
     </div>
     <div class="step-section-content">
       ${passo.pratique.desafio ? `<p><strong>${escapeHtml(passo.pratique.desafio)}</strong></p>` : ''}
-      <p style="margin-top:var(--space-md);color:var(--color-muted)">${escapeHtml(passo.pratique.instrucoes).replace(/\n/g, '<br>')}</p>
+      <p class="mt-md text-muted">${escapeHtml(passo.pratique.instrucoes).replace(/\n/g, '<br>')}</p>
     </div>
   </div>`;
 }
@@ -378,6 +378,9 @@ function gerarPagina(passo, todosPassos) {
     <div class="container footer-inner">
       <strong>Praticando o Caminho</strong>
       <p>Comunidade Vitral · Uma jornada de discipulado</p>
+      <p class="mt-sm text-small">
+        &ldquo;Esteja com Jesus, Torne-se como Ele, Faça como Ele fez.&rdquo;
+      </p>
       <a href="#main" class="back-to-top" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
     </div>
   </footer>

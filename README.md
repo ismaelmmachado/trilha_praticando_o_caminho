@@ -53,10 +53,22 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
 
 ## Conteúdo
 
-Todo o conteúdo do site foi extraído das 17 apostilas originais (formato docx) via `scripts/extrair_apostilas.py`. **Nada foi inventado** — seções sem conteúdo das apostilas permanecem como placeholders (vídeos, links do livro).
+Todo o conteúdo do site foi extraído das 17 apostilas originais (formato docx) via `scripts/extrair_apostilas.py`. **Nada foi inventado** — seções sem conteúdo das apostilas permanecem como placeholders ("Em breve").
 
-- 2 seções de transição entre Etapa 1 e Etapa 2 (conteúdo do Guia de Transição)
+- 1 seção de transição entre Etapa 1 e Etapa 2 (conteúdo do Guia de Transição)
 - Mapa da Jornada com perguntas, dicas e estrutura (conteúdo da Apostila do Mapa)
+
+## Status de Lançamento (MVP)
+
+Versão MVP pronta para publicação. O que está **pronto**:
+
+- Textos dos 17 passos: resumo, devocional, base bíblica, experimento, pergunta e oração
+- Mapa da Jornada e Material Complementar
+- 6 seções por passo, placeholders "Em breve" uniformes, acessibilidade e links verificados
+
+O que **aguarda material** (veja `docs/checklist-lancamento-mvp.md`):
+
+- Vídeos, áudios Spotify, músicas sugeridas, links de livros, grade semanal e PDFs das apostilas
 
 ## Design System
 
