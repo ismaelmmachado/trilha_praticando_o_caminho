@@ -489,6 +489,12 @@ ul { list-style: none; }
   font-size: 0.9rem;
 }
 
+.video-placeholder p {
+  color: var(--color-muted);
+  padding: 2rem;
+  text-align: center;
+}
+
 /* Resource list */
 .resource-list {
   display: grid;
@@ -745,6 +751,11 @@ ul { list-style: none; }
 .download-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px var(--accent-border);
+}
+
+.download-btn.is-empty:hover {
+  transform: none;
+  box-shadow: 0 4px 14px var(--accent-border);
 }
 
 .download-icon {

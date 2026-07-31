@@ -90,7 +90,7 @@ function renderOuca(passo) {
   if (passo.ouca) {
     const spotifyHtml = passo.ouca.spotify_url
       ? `<iframe src="${escapeHtml(passo.ouca.spotify_url)}" allowfullscreen class="spotify-embed"></iframe>`
-      : '<p style="color:var(--color-muted);padding:2rem;text-align:center;">Em breve</p>';
+      : '<p>Em breve</p>';
     return `<div class="step-section">
     <div class="step-section-header">
       <div class="section-icon" aria-hidden="true">🎧</div>
@@ -107,7 +107,7 @@ function renderOuca(passo) {
 function renderAssista(passo) {
   const videoHtml = passo.assista.url
     ? `<iframe src="${escapeHtml(passo.assista.url)}" allowfullscreen></iframe>`
-    : '<p style="color:var(--color-muted);padding:2rem;text-align:center;">Vídeo em breve</p>';
+    : '<p>Vídeo em breve</p>';
   return `<div class="step-section">
     <div class="step-section-header">
       <div class="section-icon" aria-hidden="true">🎬</div>

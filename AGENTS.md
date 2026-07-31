@@ -46,12 +46,13 @@ git push origin <branch> --tags
 
 ### Pendências (conteúdo)
 Todo conteúdo multimídia está como "Em breve" — aguardando material:
-- Vídeos (assista.url em `dados/passos.json`)
+- Vídeos (assista.url em `dados/passos.json`; campo não renderizado no formato atual — `assista` só aparece no formato antigo)
 - Áudios Spotify (ouca.spotify_url)
 - Músicas sugeridas (aprofunde.musica)
 - Grade semanal (organizese.dias)
 - Links de livros (aprofunde.livro.url)
-- PDFs das apostilas (`/apostilas/passo-N.pdf` não existem)
+- `pratique.desafio` (vazio nos 17 passos; experimento/pergunta/instruções preenchidos)
+- PDFs das apostilas — botão exibe "Em breve" (apostila_pdf = "") até os PDFs existirem
 
 ### Estrutura
 - `index.html` sem `data-etapa` (neutro — :root fallback no CSS)
