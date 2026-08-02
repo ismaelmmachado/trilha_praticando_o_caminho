@@ -42,6 +42,7 @@
 - `.site-header` + `.mobile-header` com nav responsiva
 - `.container` (max-width: 1200px) + `.content-container` (max-width: 720px para leitura)
 - Skip link, ARIA labels, breadcrumb
+- Favicon `favicon.svg` (gradiente amarelo→verde) referenciado em todas as páginas via `<link rel="icon">`
 - 6 seções por passo: Para Começar → Ferramentas → Ouça → Aprofunde → Pratique → Organize-se
 
 ## Anti-Patterns

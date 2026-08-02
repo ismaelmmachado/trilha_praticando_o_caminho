@@ -26,6 +26,7 @@
 ├── mapa.html                # Mapa da jornada (perguntas, dicas, estrutura)
 ├── passo-1.html .. 17.html  # Páginas de cada passo (geradas automaticamente)
 ├── passo.html               # Redirect para passo-1.html (opcional)
+├── favicon.svg              # Favicon do site (SVG, gradiente por etapa)
 │
 ├── css/
 │   ├── tokens.css           # Design tokens (fontes, cores, espaçamento, sombras)
@@ -339,6 +340,7 @@ Arquivo `dados/passos.json` — objeto com `etapas` (array) e `passos` (array de
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{titulo} · {Nome da Trilha}</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/estilo.css" />
 </head>
@@ -405,6 +407,7 @@ Arquivo `dados/passos.json` — objeto com `etapas` (array) e `passos` (array de
 | 10 | Colocar apostilas PDF em `apostilas/` e preencher `para_comecar.apostila_pdf` (até existirem, deixar `""` → botão "Em breve") | `apostilas/*.pdf`, `dados/passos.json` |
 | 11 | Rodar `node scripts/gerar-passos.js` para gerar todas as páginas | — |
 | 12 | Publicar (GitHub Pages, Netlify, etc.) | — |
+| 13 | Criar `favicon.svg` e referenciar via `<link rel="icon">` no `<head>` das páginas estáticas e no template do gerador | `favicon.svg`, `scripts/gerar-passos.js` |
 
 ---
 

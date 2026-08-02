@@ -34,6 +34,7 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
 ├── passo-{1..17}.html      # Páginas estáticas geradas (1 por passo)
 ├── mapa.html               # Mapa da jornada (perguntas, dicas e estrutura)
 ├── complementar.html       # Material complementar
+├── favicon.svg             # Favicon do site (gradiente amarelo→verde)
 ├── dados/
 │   └── passos.json         # Conteúdo real dos 17 passos
 ├── scripts/

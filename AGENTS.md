@@ -51,6 +51,8 @@ git push origin <branch> --tags
 - `fix-pdf-links-em-breve` — botão PDF → "Em breve" (sem 404), placeholders sem inline styles
 - `docs-regra-salvamento-homologacao` — regra: sempre homologacao, main só sob orientação, retorno à homologacao
 - `v1.0.0-mvp-lancamento` — preparação do MVP: hero corrigido, footer frase-guia, aria-current, foco visível, limpeza CSS, passo.html validado, README e checklist de lançamento
+- `chore-remocao-skills-locais` — skills e commands locais removidos (migrados para `~/.opencode` global), README ajustado
+- `feat-favicon` — `favicon.svg` adicionado a todas as páginas e ao template do gerador
 
 ### Pendências (conteúdo)
 Todo conteúdo multimídia está como "Em breve" — aguardando material:
@@ -67,4 +69,5 @@ Todo conteúdo multimídia está como "Em breve" — aguardando material:
 - Todos os HTMLs com `aria-hidden` em ícones e `back-to-top`; `passo.html` (redirect) com `noscript` fallback
 - `css/tokens.css` limpo (9 variáveis órfãs removidas)
 - Gerador `scripts/gerar-passos.js` atualizado com todas as mudanças de template
+- `favicon.svg` referenciado via `<link rel="icon">` nas páginas estáticas (index, complementar, mapa, passo) e no template do gerador
 - Footer padrão em todas as páginas com a frase-guia
