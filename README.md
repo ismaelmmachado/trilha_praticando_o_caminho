@@ -74,7 +74,7 @@ O que **aguarda material** (veja `docs/checklist-lancamento-mvp.md`):
 
 ## Design System
 
-Gerado com [UI-UX Pro Max](../.opencode/skills/ui-ux-pro-max).
+Gerado com a skill global [UI-UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (`~/.opencode/skills/ui-ux-pro-max`).
 
 | Token | Valor |
 |-------|-------|
