@@ -321,6 +321,7 @@ function gerarPagina(passo, todosPassos) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${escapeHtml(passo.titulo)} · Praticando o Caminho</title>
   <meta name="description" content="${escapeHtml(passo.subtitulo)} - Passo ${passo.id} da jornada de discipulado Praticando o Caminho." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/estilo.css" />
 </head>
