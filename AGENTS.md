@@ -62,6 +62,9 @@ git push origin <branch> --tags
 - `index.html` carrega o JSON via `fetch` em `js/app.js` (data-driven)
 - Seção Ferramentas vem do array compartilhado `ferramentas` (topo do JSON), igual em todos os passos
 
+### Manutenção de conteúdo dos passos
+- Antes de aplicar qualquer mudança de conteúdo, leia `docs/MANUTENCAO.md` e siga exatamente o contrato (fonte da verdade em JSON, HTML gerado, ações INCLUIR/SUBSTITUIR/REMOVER)
+
 ### Pendências (conteúdo)
 Todo conteúdo multimídia está como "Em breve" — aguardando material:
 - Vídeos (assista.url em `dados/passos.json`; campo não renderizado no formato atual — `assista` só aparece no formato antigo)
