@@ -3,6 +3,7 @@ const path = require('path');
 
 const dados = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'dados', 'passos.json'), 'utf-8'));
 const passos = dados.passos;
+const ferramentas = dados.ferramentas || [];
 
 function renderParaComecar(passo) {
   if (passo.para_comecar) {
@@ -29,7 +30,37 @@ function renderParaComecar(passo) {
   return renderMedite(passo);
 }
 
-function renderParaTeAjudar() {
+function renderFerramentas(ferramentas) {
+  const itens = (Array.isArray(ferramentas) && ferramentas.length > 0) ? ferramentas : null;
+  let listaHtml;
+  if (itens) {
+    listaHtml = itens.map(f => {
+      const linkHtml = f.link
+        ? `<a class="ferramenta-link" href="${escapeHtml(f.link)}" target="_blank">${escapeHtml(f.rotulo)}</a>`
+        : '<span class="ferramenta-link is-empty">Em breve</span>';
+      return `        <div class="ferramenta-item">
+          <div class="ferramenta-item-content">
+            <span class="ferramenta-icon" aria-hidden="true">${f.icon || '🛠️'}</span>
+            <div class="ferramenta-info">
+              <strong>${escapeHtml(f.nome)}</strong>
+              <span>${escapeHtml(f.descricao)}</span>
+            </div>
+          </div>
+          ${linkHtml}
+        </div>`;
+    }).join('\n');
+  } else {
+    listaHtml = `        <div class="ferramenta-item">
+          <div class="ferramenta-item-content">
+            <span class="ferramenta-icon" aria-hidden="true">🛠️</span>
+            <div class="ferramenta-info">
+              <strong>Ferramentas em breve</strong>
+              <span>Em breve</span>
+            </div>
+          </div>
+          <span class="ferramenta-link is-empty">Em breve</span>
+        </div>`;
+  }
   return `<div class="step-section">
     <div class="step-section-header">
       <div class="section-icon" aria-hidden="true">🛠️</div>
@@ -38,36 +69,7 @@ function renderParaTeAjudar() {
     <div class="step-section-content">
       <p class="ferramentas-intro">Ferramentas que podem apoiar sua caminhada:</p>
       <div class="ferramentas-list">
-        <div class="ferramenta-item">
-          <div class="ferramenta-item-content">
-            <span class="ferramenta-icon" aria-hidden="true">📖</span>
-            <div class="ferramenta-info">
-              <strong>Bible App (YouVersion)</strong>
-              <span>A Bíblia no seu bolso. Siga a Comunidade Vitral.</span>
-            </div>
-          </div>
-          <a class="ferramenta-link" href="https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1" target="_blank">Baixar</a>
-        </div>
-        <div class="ferramenta-item">
-          <div class="ferramenta-item-content">
-            <span class="ferramenta-icon" aria-hidden="true">🙏</span>
-            <div class="ferramenta-info">
-              <strong>Lectio 365</strong>
-              <span>Devocional diário em português. Ore com a Bíblia.</span>
-            </div>
-          </div>
-          <a class="ferramenta-link" href="https://lectio365.com/pt-br/o-aplicativo/" target="_blank">Baixar</a>
-        </div>
-        <div class="ferramenta-item">
-          <div class="ferramenta-item-content">
-            <span class="ferramenta-icon" aria-hidden="true">🎙️</span>
-            <div class="ferramenta-info">
-              <strong>Vitral no Spotify</strong>
-              <span>Podcast da Comunidade Vitral para sua jornada.</span>
-            </div>
-          </div>
-          <a class="ferramenta-link" href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank">Ouvir</a>
-        </div>
+${listaHtml}
       </div>
     </div>
   </div>`;
@@ -298,7 +300,7 @@ function gerarPagina(passo, todosPassos) {
   const sections = isNewFormat
     ? [
         renderParaComecar(passo),
-        renderParaTeAjudar(),
+        renderFerramentas(ferramentas),
         renderOuca(passo),
         renderAprofunde(passo),
         renderPratique(passo),

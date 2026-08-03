@@ -5,7 +5,7 @@
 | Ordem | Seção | Ícone | Conteúdo | Fonte dos dados |
 |-------|-------|-------|----------|-----------------|
 | 1 | Para Começar | 📖 | Resumo acolhedor extraído da apostila + botão download PDF | JSON (único por passo) |
-| 2 | Ferramentas para o Caminho | 🛠️ | Lista fixa: Bible App, Lectio 365, Spotify Vitral | Hardcoded no gerador (igual todos) |
+| 2 | Ferramentas para o Caminho | 🛠️ | Lista: Bible App, Lectio 365, Spotify Vitral | JSON (array compartilhado `ferramentas`, igual todos) |
 | 3 | Ouça | 🎧 | Embed Spotify ou "Em breve" | JSON (único por passo) |
 | 4 | Aprofunde | 📚 | 2 itens: Livro Sugerido + Música Sugerida | JSON (único por passo) |
 | 5 | Pratique | 🎯 | Experimento simples (Ação) + Pergunta da Semana | JSON (único por passo) |
@@ -15,7 +15,7 @@
 
 1. **Fallback**: se campo vazio, mostrar "Em breve"
 2. **Redundância**: Pratique NUNCA repete a oração da apostila — é um experimento leve (ação concreta e possível) + pergunta para levar no bolso
-3. **Ferramentas**: fixo em todos os passos (hardcoded), pois a pessoa pode entrar em qualquer passo
+3. **Ferramentas**: vêm do JSON (array compartilhado `ferramentas` no topo do arquivo), iguais em todos os passos, pois a pessoa pode entrar em qualquer passo
 4. **Tom**: Regra de Ouro — simples, acolhedor, sem jargões, NVT nas citações
 
 ## Modelo de Dados (JSON)
@@ -61,6 +61,18 @@
 }
 ```
 
+**Chave de topo do arquivo (fora de cada passo) — Ferramentas:**
+
+```json
+"ferramentas": [
+  { "icon": "📖", "nome": "Bible App (YouVersion)", "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.", "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1", "rotulo": "Baixar" },
+  { "icon": "🙏", "nome": "Lectio 365", "descricao": "Devocional diário em português. Ore com a Bíblia.", "link": "https://lectio365.com/pt-br/o-aplicativo/", "rotulo": "Baixar" },
+  { "icon": "🎙️", "nome": "Vitral no Spotify", "descricao": "Podcast da Comunidade Vitral para sua jornada.", "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4", "rotulo": "Ouvir" }
+]
+```
+
+`renderFerramentas()` lê esse array e renderiza para todos os passos. Se vazio → placeholder "Em breve".
+
 ## Detecção de formato
 
 - Se `passo.para_comecar` existe → **formato novo** (usa renderizadores novos)
@@ -92,7 +104,7 @@ Renderizadores do novo formato:
 | Função | Renderiza |
 |--------|-----------|
 | `renderParaComecar()` | Resumo + botão download |
-| `renderFerramentas()` | Ferramentas fixas (hardcoded) |
+| `renderFerramentas()` | Ferramentas (JSON compartilhado `ferramentas`) |
 | `renderOuca()` | Spotify embed ou "Em breve" |
 | `renderAprofunde()` | Lista de recursos (livro + música) |
 | `renderPratique()` | Experimento + pergunta (ou fallback legado) |
@@ -276,6 +288,10 @@ Para cada passo em `dados/passos.json`:
 - [ ] `pratique.experimento` — ação concreta, tom acolhedor, sem meta (A+B combinado)
 - [ ] `pratique.pergunta` — pergunta para levar no bolso, sem resposta definitiva
 - [ ] `organizese.dias` — array 7 objetos { dia, tema, leitura } ou vazio
+
+**Chave de topo (fora de cada passo):**
+
+- [ ] `ferramentas` — array compartilhado de apps/ferramentas (vazio → seção mostra "Em breve")
 
 Após preencher JSON:
 

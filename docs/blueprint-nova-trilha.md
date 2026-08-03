@@ -241,7 +241,7 @@ Usa `var(--accent-gradient)` como fundo.
 
 ## 5. Modelo de Dados
 
-Arquivo `dados/passos.json` — objeto com `etapas` (array) e `passos` (array de passos). Estrutura real de cada passo:
+Arquivo `dados/passos.json` — objeto com `ferramentas` (array compartilhado), `etapas` (array) e `passos` (array de passos). Estrutura real de cada passo:
 
 ```json
 {
@@ -302,12 +302,14 @@ Arquivo `dados/passos.json` — objeto com `etapas` (array) e `passos` (array de
 **Regras de renderização (formato novo — detectado por `passo.para_comecar`):**
 
 - Seções renderizadas: Para Começar → Ferramentas → Ouça → Aprofunde → Pratique → Organize-se → Navegação.
-- **Ferramentas** são fixas/hardcoded no gerador (Bible App, Lectio 365, Vitral no Spotify) — não vêm do JSON.
+- **Ferramentas** vêm da chave `ferramentas` (array compartilhado no topo do JSON) — iguais em todos os passos (Bible App, Lectio 365, Vitral no Spotify).
 - `medite` e `assista` são preservados no JSON (fonte das apostilas), mas **não são renderizados no formato novo**.
 - Se `para_comecar` ausente, o gerador usa o **formato legado** (Medite + Assista).
 - Campos vazios (`url`, `spotify_url`, `apostila_pdf`, `tema`, etc.) exibem "Em breve".
 
-**Campos obrigatórios:** `id`, `titulo`, `subtitulo`, `etapa`, `status`, `semana`, `medite`, `assista`, `aprofunde`, `pratique`, `organizese`, `para_comecar`, `ouca`.
+**Campos obrigatórios (por passo):** `id`, `titulo`, `subtitulo`, `etapa`, `status`, `semana`, `medite`, `assista`, `aprofunde`, `pratique`, `organizese`, `para_comecar`, `ouca`.
+
+**Topo do arquivo:** `etapas` (array), `passos` (array), `ferramentas` (array compartilhado — chave lida pelo gerador para a seção Ferramentas de todos os passos).
 
 **Campos opcionais:** conteúdo de `url`/`spotify_url`/`apostila_pdf`/`musica.*` (podem ficar vazios até existir material).
 
