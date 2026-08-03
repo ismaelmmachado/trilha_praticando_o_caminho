@@ -43,17 +43,33 @@ git push origin <branch> --tags
 
 ## Work State
 
+### Mapa da Documentação
+
+| O que você procura | Onde |
+|---|---|
+| Identidade / linguagem (REGRA DE OURO, citações NVT) | `docs/REGRA_DE_OURO.md` |
+| Como manter conteúdo dos passos (ações INCLUIR/SUBSTITUIR/REMOVER) | `docs/MANUTENCAO.md` |
+| Como executar cada tipo de atualização (runbook) | `docs/RUNBOOK.md` |
+| Por que as decisões foram tomadas (ADR) | `docs/DECISOES.md` |
+| Padrão de seções / layout visual dos passos | `docs/padrao-secoes-passo.md` |
+| Modelo de dados e spec da trilha | `docs/blueprint-nova-trilha.md` |
+| Pendências de conteúdo ("Em breve") | `docs/PENDENCIAS.md` |
+| Histórico de tags/versões | `CHANGELOG.md` |
+| Design system / tokens | `design-system/praticando-o-caminho-vitral/MASTER.md` |
+
+### Docs vivos
+
+Mudou código ou conteúdo? Atualize o documento correspondente no **mesmo commit**
+(nada de "docs separados depois"). Se um fato precisa aparecer em mais de um lugar,
+use **cross-link** — nunca duplique o conteúdo.
+
 ### Tags no repositório
-- `refactor-ajustes-estruturais` — correção de cor Etapa 2, renomeio facilitador→mapa, inline styles removidos
-- `fix-hero-label` — hero-label "ESTAÇÃO 2 — PRATICANDO O CAMINHO"
-- `fix-ux-ui-ajustes` — PDF links → "Em breve", indicador progresso, aria-hidden, noscript, back-to-top, tokens, inline style app.js
-- `chore-limpeza-css` — variáveis não usadas removidas, back-to-top href corrigido, data-etapa removido
-- `fix-pdf-links-em-breve` — botão PDF → "Em breve" (sem 404), placeholders sem inline styles
-- `docs-regra-salvamento-homologacao` — regra: sempre homologacao, main só sob orientação, retorno à homologacao
-- `v1.0.0-mvp-lancamento` — preparação do MVP: hero corrigido, footer frase-guia, aria-current, foco visível, limpeza CSS, passo.html validado, README e checklist de lançamento
-- `chore-remocao-skills-locais` — skills e commands locais removidos (migrados para `~/.opencode` global), README ajustado
-- `feat-favicon` — `favicon.svg` adicionado a todas as páginas e ao template do gerador
-- `refactor-ferramentas-data-driven` — seção "Ferramentas para o Caminho" 100% data-driven: array compartilhado `ferramentas` no topo do JSON, gerador sem conteúdo fixo de passo, docs alinhados
+
+Histórico completo em `CHANGELOG.md`. Tags recentes:
+- `docs-manutencao-main` — contrato de manutenção sincronizado em `main`
+- `docs-contrato-manutencao` — `docs/MANUTENCAO.md` + referência no AGENTS.md
+- `docs-modelo-conteudo-data-driven` — Work State com modelo de conteúdo data-driven
+- `refactor-ferramentas-data-driven` — seção Ferramentas 100% data-driven
 
 ### Modelo de conteúdo (data-driven)
 - **TODO o conteúdo dos passos vive em `dados/passos.json`** — `passo-*.html` são geradas e **NÃO devem ser editadas à mão**
@@ -61,19 +77,15 @@ git push origin <branch> --tags
 - Campos vazios renderizam placeholder "Em breve" (classe `.is-empty` global) — nunca remover seção nem quebrar layout
 - `index.html` carrega o JSON via `fetch` em `js/app.js` (data-driven)
 - Seção Ferramentas vem do array compartilhado `ferramentas` (topo do JSON), igual em todos os passos
+- Tabela de passos do `README.md` é gerada por `node scripts/gerar-readme.js` (não editar à mão)
 
 ### Manutenção de conteúdo dos passos
 - Antes de aplicar qualquer mudança de conteúdo, leia `docs/MANUTENCAO.md` e siga exatamente o contrato (fonte da verdade em JSON, HTML gerado, ações INCLUIR/SUBSTITUIR/REMOVER)
+- Para executar uma atualização passo a passo, siga `docs/RUNBOOK.md`
 
 ### Pendências (conteúdo)
-Todo conteúdo multimídia está como "Em breve" — aguardando material:
-- Vídeos (assista.url em `dados/passos.json`; campo não renderizado no formato atual — `assista` só aparece no formato antigo)
-- Áudios Spotify (ouca.spotify_url)
-- Músicas sugeridas (aprofunde.musica)
-- Grade semanal (organizese.dias)
-- Links de livros (aprofunde.livro.url)
-- `pratique.desafio` (vazio nos 17 passos; experimento/pergunta/instruções preenchidos)
-- PDFs das apostilas — botão exibe "Em breve" (apostila_pdf = "") até os PDFs existirem
+
+Fonte única: `docs/PENDENCIAS.md`. Resumo: todo conteúdo multimídia aguarda material — vídeos, áudios Spotify, músicas sugeridas, grade semanal, links de livros, `pratique.desafio` e PDFs das apostilas (botões exibem "Em breve").
 
 ### Estrutura
 - `index.html` sem `data-etapa` (neutro — :root fallback no CSS)

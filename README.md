@@ -39,6 +39,7 @@ HTML + CSS + JS puro (estático). Zero dependências. Dados em JSON.
 │   └── passos.json         # Conteúdo real dos 17 passos
 ├── scripts/
 │   ├── gerar-passos.js     # Gerador de páginas estáticas dos passos
+│   ├── gerar-readme.js     # Gera a tabela de passos do README a partir do JSON
 │   ├── extrair_apostilas.py# Extrator de conteúdo DOCX → JSON
 │   └── migrar-passos.js    # Script one-off (criação do conteúdo dos passos)
 ├── css/
@@ -89,25 +90,29 @@ Gerado com a skill global [UI-UX Pro Max](https://github.com/nextlevelbuilder/ui
 
 ## Passos
 
+Tabela **gerada a partir de `dados/passos.json`** pelo script `node scripts/gerar-readme.js` — não edite manualmente (edite o JSON e rode o script).
+
+<!-- PASSOS-START -->
 | # | Título | Etapa | Status |
 |---|--------|-------|--------|
 | 1 | O Convite Para Ser Aprendiz | 1 | ✅ Aberto |
 | 2 | A Formação Que Começa Em Deus | 1 | ✅ Aberto |
-| 3 | O Caminho da Transformação | 1 | ✅ Aberto |
-| 4 | As Práticas que nos Formam | 1 | ✅ Aberto |
-| 5 | Dor e Sofrimento | 1 | ✅ Aberto |
-| 6 | Cura do Pecado | 1 | ✅ Aberto |
-| 7 | Minha Regra de Vida | 1 | ✅ Aberto |
-| 8 | Vida em Comunidade | 1 | ✅ Aberto |
-| 9 | O Descanso como Ritmo de Graça | 2 | ✅ Aberto |
-| 10 | O Ritmo da Oração | 2 | ✅ Aberto |
-| 11 | O Jejum como Espaço para Deus | 2 | ✅ Aberto |
-| 12 | O Silêncio como Espaço Sagrado | 2 | ✅ Aberto |
-| 13 | A Generosidade como Estilo de Vida | 2 | ✅ Aberto |
-| 14 | A Meditação como Leitura Orante | 2 | ✅ Aberto |
-| 15 | A Comunidade como Corpo de Cristo | 2 | ✅ Aberto |
-| 16 | O Serviço como Expressão do Reino | 2 | ✅ Aberto |
-| 17 | O Testemunho como Coerência de Vida | 2 | ✅ Aberto |
+| 3 | O Caminho Da Transformação | 1 | ✅ Aberto |
+| 4 | As Práticas Que Nos Formam | 1 | ✅ Aberto |
+| 5 | Dor E Sofrimento | 1 | ✅ Aberto |
+| 6 | Cura Do Pecado | 1 | ✅ Aberto |
+| 7 | Minha Regra De Vida | 1 | ✅ Aberto |
+| 8 | Vida Em Comunidade | 1 | ✅ Aberto |
+| 9 | O Descanso Como Ritmo De Graça | 2 | ✅ Aberto |
+| 10 | O Ritmo Da Oração | 2 | ✅ Aberto |
+| 11 | O Jejum Como Espaço Para Deus | 2 | ✅ Aberto |
+| 12 | O Silêncio Como Espaço Sagrado | 2 | ✅ Aberto |
+| 13 | A Generosidade Como Estilo De Vida | 2 | ✅ Aberto |
+| 14 | A Meditação Como Leitura Orante | 2 | ✅ Aberto |
+| 15 | A Comunidade Como Corpo De Cristo | 2 | ✅ Aberto |
+| 16 | O Serviço Como Expressão Do Reino | 2 | ✅ Aberto |
+| 17 | O Testemunho Como Coerência De Vida | 2 | ✅ Aberto |
+<!-- PASSOS-END -->
 
 ## Frase-guia
 
