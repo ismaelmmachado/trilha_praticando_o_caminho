@@ -53,6 +53,14 @@ git push origin <branch> --tags
 - `v1.0.0-mvp-lancamento` — preparação do MVP: hero corrigido, footer frase-guia, aria-current, foco visível, limpeza CSS, passo.html validado, README e checklist de lançamento
 - `chore-remocao-skills-locais` — skills e commands locais removidos (migrados para `~/.opencode` global), README ajustado
 - `feat-favicon` — `favicon.svg` adicionado a todas as páginas e ao template do gerador
+- `refactor-ferramentas-data-driven` — seção "Ferramentas para o Caminho" 100% data-driven: array compartilhado `ferramentas` no topo do JSON, gerador sem conteúdo fixo de passo, docs alinhados
+
+### Modelo de conteúdo (data-driven)
+- **TODO o conteúdo dos passos vive em `dados/passos.json`** — `passo-*.html` são geradas e **NÃO devem ser editadas à mão**
+- Fluxo de manutenção: editar o JSON → rodar `node scripts/gerar-passos.js` → conferir que nenhuma página de passo muda no diff (visual preservado)
+- Campos vazios renderizam placeholder "Em breve" (classe `.is-empty` global) — nunca remover seção nem quebrar layout
+- `index.html` carrega o JSON via `fetch` em `js/app.js` (data-driven)
+- Seção Ferramentas vem do array compartilhado `ferramentas` (topo do JSON), igual em todos os passos
 
 ### Pendências (conteúdo)
 Todo conteúdo multimídia está como "Em breve" — aguardando material:
